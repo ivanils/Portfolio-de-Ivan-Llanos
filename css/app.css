@@ -430,7 +430,7 @@ body .ventana .menu_responsive.activo {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
-body .ventana .menu_responsive .secciones {
+body .ventana .menu_responsive .secciones_responsive {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
@@ -455,11 +455,11 @@ body .ventana .menu_responsive .secciones {
   -webkit-transition: all 1s ease 1s;
   transition: all 1s ease 1s;
 }
-body .ventana .menu_responsive .secciones .h5_responsive {
+body .ventana .menu_responsive .secciones_responsive .h5_responsive {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
-body .ventana .menu_responsive .secciones .h5_responsive:hover {
+body .ventana .menu_responsive .secciones_responsive .h5_responsive:hover {
   -webkit-filter: drop-shadow(0 0 5px white);
           filter: drop-shadow(0 0 5px white);
 }
@@ -493,7 +493,7 @@ body .ventana .menu_responsive .rrss_responsive .rs:hover {
   -webkit-filter: drop-shadow(0 0 5px white);
           filter: drop-shadow(0 0 5px white);
 }
-body .ventana .menu_responsive.activo .secciones {
+body .ventana .menu_responsive.activo .secciones_responsive {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;

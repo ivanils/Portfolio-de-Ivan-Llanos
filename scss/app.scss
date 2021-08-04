@@ -151,7 +151,7 @@ body{
       &.activo{
         transform: translateX(0%);
       }
-      .secciones{
+      .secciones_responsive{
         // background: turquoise;
         flex: 3;
         @include flex( column, nowrap, space-around, flex-start );
@@ -183,7 +183,7 @@ body{
           filter: drop-shadow(0 0 5px white);
         }
       }
-      &.activo .secciones{
+      &.activo .secciones_responsive{
         transform: translateX(0%);
         opacity: 1;
       }
