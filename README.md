@@ -1,4 +1,7 @@
 ## Descripción 🏝
+
+-*En construcción*-
+
 Este proyecto es mi portfolio personal, el cual he realizado como proyecto final del máster en Desarrollo Web de la escuela Trazos.
 
 
