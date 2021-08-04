@@ -5,10 +5,10 @@
 a{
   cursor: none;
 }
-h1, h2, h3, h4, h5, li{
+h2, h3, h4, h5, li{
   font-family: 'Days One', sans-serif;
 }
-p{
+h1, p{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -192,23 +192,12 @@ body{
         transform: scale(1);
       }
     }
-    // .scrolling{
-    //   position: absolute;
-    //   top: 25%;
-    //   left: 1%;
-    //   background: white;
-    //   width: 5px;
-    //   border-radius: 5px;
-    //   height: 0%;
-    //   max-height: 100%;
-    // }
     .ven_web{
       position: absolute;
       transform: translateX(-105%);
       width: 100%;
       height: 100%;
       background-color: transparent;
-      // border: 10px solid pink;
       transition: 1s ease-in-out;
       @include flex(column, nowrap, center, center);
       &.activo{
@@ -278,7 +267,6 @@ body{
       width: 100%;
       height: 100%;
       background-color: transparent;
-      // border: 10px solid pink;
       transition: 1s ease-in-out;
       &.activo{
         transition: 1s ease-in-out .5s;
@@ -381,7 +369,7 @@ body .cursorpack.activo_tres{
   position: sticky;
   top: 0;
   z-index: 6;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--negro-hea-fot);
   transition: 1s ease;
   @include flex(row, nowrap, center, center);
   &.esconder{
@@ -395,19 +383,22 @@ body .cursorpack.activo_tres{
       transition: 1s;
     }
     width: 80%;
+    max-width: var(--grande);
+    @include flex(row, nowrap, space-between, center);
     @media (max-width:1600px){
       font-size: 80%;
     }
     @media (max-width:600px){
-      display: none;    }
-    @include flex(row, nowrap, space-between, center);
-    .logo{@include flex(row, wrap, flex-start, center);
+      display: none;
+    }
+    .logo{
       flex: 1;
       font-family: 'Days One', sans-serif;
       font-size: 2em;
       text-align: center;
       cursor: none;
       position: relative;
+      @include flex(row, wrap, flex-start, center);
       .ele{
         -webkit-text-stroke: 2px white;
         color: transparent; 
@@ -459,7 +450,7 @@ body .cursorpack.activo_tres{
           filter: drop-shadow(0 0 5px orange);
         }
         &.git:hover{
-          filter: drop-shadow(0 0 5px rgb(247, 0, 247));
+          filter: drop-shadow(0 0 5px var(--rosa));
         }
         &.mail:hover{
           filter: drop-shadow(0 0 5px turquoise);
@@ -509,7 +500,7 @@ body .cursorpack.activo_tres{
         height: 10em;
         filter: blur(5em);
         animation-duration: 5s;
-        background-color: rgb(100, 34, 100);
+        background-color: var(--morado-osc);
       }
     }
     .dos{
@@ -517,7 +508,7 @@ body .cursorpack.activo_tres{
       width: 15em;
       height: 15em;        
       border-radius: 50%;
-      background: rgb(238, 137, 6);
+      background: orange;
       filter: blur(10em);
       transform: rotate(0deg) translateX(25em) rotate(0deg);
       animation-name: moversedrcha;
@@ -538,7 +529,7 @@ body .cursorpack.activo_tres{
         height: 10em;
         filter: blur(5em);
         animation-duration: 5s;
-        background-color: rgb(100, 34, 100);
+        background-color: var(--morado-osc);
       }
     }
     .tres{
@@ -567,7 +558,7 @@ body .cursorpack.activo_tres{
       height: 10em;
       filter: blur(5em);
       animation-duration: 5s;
-      background-color: rgb(100, 34, 100);
+      background-color: var(--morado-osc);
     }
   }
   .cuatro{
@@ -578,7 +569,7 @@ body .cursorpack.activo_tres{
     left: 30%;
     top: 30%;
     z-index: -2;
-    background: rgb(202, 63, 202);
+    background: var(--rosa);
     filter: blur(5em);
     transform: rotate(0deg) translateX(-5em) rotate(0deg);
     animation-name: moversecuatro;
@@ -598,7 +589,7 @@ body .cursorpack.activo_tres{
       height: 10em;
       filter: blur(5em);
       animation-duration: 5s;
-      background-color: rgb(100, 34, 100);
+      background-color: var(--morado-osc);
     }
   }
   .cinco{
@@ -629,7 +620,7 @@ body .cursorpack.activo_tres{
       height: 10em;
       filter: blur(5em);
       animation-duration: 3s;
-      background-color: rgb(100, 34, 100);
+      background-color: var(--morado-osc);
     }
   }
   .desenfoque.orange{ background: rgba(255, 166, 0, 0.26);}
@@ -639,6 +630,7 @@ body .cursorpack.activo_tres{
 } 
 .contenido{
   position: absolute;
+  max-width: var(--grande);
   width: 100%;
   height: 100%;
   // background-color: purple;
@@ -662,17 +654,16 @@ body .cursorpack.activo_tres{
       flex: auto;
       width: 70%;
     }
-    .h1{
+    .h2{
       margin-right: 25%;
       font-size: 8em;
       color: white;
       text-transform: uppercase;
-      transition: .5s;
-      &:hover.nombre{
+      &:hover .nombre{
         -webkit-text-stroke: 2px white;
         color: transparent;   
       }
-      &:hover.apellido{
+      &:hover .apellido{
         -webkit-text-stroke: 0px white;
         color: white;   
       }
@@ -684,12 +675,12 @@ body .cursorpack.activo_tres{
     .nombre{
       transform-origin: bottom left;
       transform: rotate(0deg);
-      cursor: none;
+      transition: .5s;
     }
     .apellido{
       -webkit-text-stroke: 2px white;
       color: transparent; 
-      cursor: none;
+      transition: .5s;
     }
   }
   .par_drc{
@@ -701,24 +692,24 @@ body .cursorpack.activo_tres{
       flex: auto;
       width: 70%;
     }
-    .p{
+    .h1{
       margin-left: 25%;
       color: white;
-      // background-color: magenta;
       font-size: 2.5em;
       font-weight: 30;
       @media (max-width: 850px){
         margin: 0;
-        // background-color: yellow;
-      } 
+      }
+      .d_block{
+        display: block;
+      }
     }
   }
 }
   
 .me{
   width:100%;
-  // height: 100vh;
-  // background-color: red;
+  max-width: var(--grande);
   margin: auto;
   padding: 5% 0;
   @media (max-width:1600px){
@@ -780,7 +771,7 @@ body .cursorpack.activo_tres{
   }
 }
 .skills{
-  // background-color: purple;
+  max-width: var(--grande);
   width: 70%;
   margin: auto;
   padding: 10% 0 5% 0%;
@@ -931,21 +922,21 @@ body .cursorpack.activo_tres{
     opacity: 0;
     width: 100%;
     min-height: 15vh;
-    border-top: 5px solid rgb(182, 75, 253);
-    border-bottom: 5px solid rgb(182, 75, 253);
+    border-top: 5px solid var(--morado-borde);
+    border-bottom: 5px solid var(--morado-borde);
     cursor: none;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: var(--negro-hea-fot);
     @include flex(row, nowrap, center, center);
     overflow: hidden;
     transition: transform 1s ease, border-top .5s ease, border-bottom .5s ease, opacity 3s ease;
     @media (max-width: 600px) {
-      border-top: 3px solid rgb(182, 75, 253);
-      border-bottom: 3px solid rgb(182, 75, 253);
+      border-top: 3px solid var(--morado-borde);
+      border-bottom: 3px solid var(--morado-borde);
     }
     &:hover{
-      border-top: 5px solid rgb(23, 149, 172);
-      border-bottom: 5px solid rgb(23, 149, 172);
+      border-top: 5px solid var(--turquesa-hover);
+      border-bottom: 5px solid var(--turquesa-hover);
     }
     &.entrar{
       opacity: 1;
@@ -994,7 +985,7 @@ body .cursorpack.activo_tres{
       }
     }
     &:hover .h2{
-      filter: drop-shadow(0px 0px 15px rgb(13, 200, 233));
+      filter: drop-shadow(0px 0px 15px var(--turquesa-hover));
       animation-play-state: paused;
     }
   }
@@ -1011,7 +1002,7 @@ body .cursorpack.activo_tres{
       }
       &:hover .h2{
         color: white;
-        filter: drop-shadow(0px 0px 15px rgb(13, 200, 233));
+        filter: drop-shadow(0px 0px 15px var(--turquesa-hover));
         animation-play-state: paused;
   }
   }
@@ -1028,7 +1019,7 @@ body .cursorpack.activo_tres{
 }
 .footer{
   width: 100%;
-  background: black;
+  background: var(--negro-hea-fot);
   @include flex( row, nowrap, center, center);
   padding: 1em;
   @media (max-width:1600px){

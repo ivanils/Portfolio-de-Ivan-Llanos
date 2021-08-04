@@ -6,11 +6,11 @@
     <title>Ivan Llanos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="css/app.css">
     <link rel="icon" type="image/png" href="assets/favicon5.png">
-    <script src="https://kit.fontawesome.com/56facdea9c.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/56facdea9c.js" crossorigin="anonymous"></script>
     <script defer src="js/app.js" ></script>
 </head>
 <body>
@@ -19,29 +19,40 @@
         <div class="fancy"></div>
     </div>
     <div class="ventana">
-        <div class="burguer">
+        <div class="burguer esconder">
             <div class="linea arriba"></div>
             <div class="linea abajo"></div>
         </div>
         <div class="menu_responsive">
-            <ul class="secciones">
-                <li class="li_responsive"><a href="#me" title=""><h5 class="h5_responsive">WHO AM I</h5></a></li>
-                <li class="li_responsive"><a href="#skills" title=""><h5 class="h5_responsive">SKILLS</h5></a></li>
-                <li class="li_responsive"><a href="#work" title=""><h5 class="h5_responsive">WORK</h5></a></li>
+            <ul class="secciones_responsive">
+                <li class="li_responsive">
+                    <a class="a" title="Me" href="#me" title="Who Am I">
+                        <h5 class="h5_responsive">WHO AM I</h5>
+                    </a>
+                </li>
+                <li class="li_responsive">
+                    <a class="a" title="Skills" href="#skills" title="">
+                        <h5 class="h5_responsive">SKILLS</h5>
+                    </a>
+                </li>
+                <li class="li_responsive">
+                    <a class="a" title="Work" href="#work" title="">
+                        <h5 class="h5_responsive">WORK</h5>
+                    </a>
+                </li>
             </ul>
             <ul class="rrss_responsive">
                 <li class="rs link">
-                    <a href="https://www.linkedin.com/in/ivan-llanos-santamaria/"><i class="fab fa-linkedin"></i></a>
+                    <a class="a" title="LinkedIn" href="https://www.linkedin.com/in/ivan-llanos-santamaria/"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="rs git">
-                    <a href="https://github.com/ivanils"><i class="fab fa-github"></i></a>
+                    <a class="a" title="GitHub" href="https://github.com/ivanils"><i class="fab fa-github"></i></a>
                 </li>
                 <li class="rs mail">
-                    <a href="mailto:ivan.llanos.santamaria@gmail.com"><i class="fas fa-at"></i></a>
+                    <a class="a" title="Mail" href="mailto:hola@ivanllanos.com"><i class="fas fa-at"></i></a>
                 </li>
             </ul>
         </div>
-        <div class="scrolling"></div>
         <div class="ven_web">
             <h3 class="working">Working on it, sorry. 😅</h3>
             <div class="equis cerrar_web"></div>
@@ -53,21 +64,29 @@
     </div>
     <header class="header">
         <nav class="nav">
-            <div class="logo"><a href="#">I<span class="ele">L</span></a></div>
+            <div class="logo">
+                <a class="a" title="Home" href="#">I<span class="ele">L</span></a>
+            </div>
             <ul class="ul">
-                <li class="li"><a href="#me" title="">WHO AM I</a></li>
-                <li class="li"><a href="#skills" title="">SKILLS</a></li>
-                <li class="li"><a href="#work" title="">WORK</a></li>
+                <li class="li">
+                    <a class="a" title="Me" href="#me" title="">WHO AM I</a>
+                </li>
+                <li class="li">
+                    <a class="a" title="Skills" href="#skills" title="">SKILLS</a>
+                </li>
+                <li class="li">
+                    <a class="a" title="Work" href="#work" title="">WORK</a>
+                </li>
             </ul>
             <ul class="rrss">
                 <li class="rs link">
-                    <a href="https://www.linkedin.com/in/ivan-llanos-santamaria/"><i class="fab fa-linkedin"></i></a>
+                    <a class="a" title="LinkedIn" href="https://www.linkedin.com/in/ivan-llanos-santamaria/"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="rs git">
-                    <a href="https://github.com/ivanils"><i class="fab fa-github"></i></a>
+                    <a class="a" title="GitHub" href="https://github.com/ivanils"><i class="fab fa-github"></i></a>
                 </li>
                 <li class="rs mail">
-                    <a href="mailto:ivan.llanos.santamaria@gmail.com"><i class="fas fa-at"></i></a>
+                    <a class="a" title="Mail" href="mailto:hola@ivanllanos.com"><i class="fas fa-at"></i></a>
                 </li>
             </ul>
         </nav>
@@ -82,11 +101,18 @@
         </div>
         <div class="contenido">
             <div class="par_izq">
-                <h1 class="h1 nombre entrar">Iván</h1>
-                <h1 class="h1 apellido">Llanos</h1>
+                <h2 class="h2 ">
+                    <a class="nombre entrar" title="Who Am I" href="#me">Iván</a>
+                </h2>
+                <h2 class="h2 ">
+                    <a class="apellido" title="Who Am I" href="#me">Llanos</a>
+                </h2>
             </div>
             <div class="par_drc">
-                <p class="p">Front End Development, <br>Graphic Design <br>and <br>Illustration.</p>
+                <h1 class="h1">Front End Development,
+                <span class="d_block">Graphic Design</span>
+                <span class="d_block">and</span>
+                <span class="d_block">Illustration.</span></h1>
             </div>
         </div>
     </section>

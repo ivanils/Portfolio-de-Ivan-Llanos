@@ -17,7 +17,7 @@ const ventana   = body.querySelector('.ventana')
 const header    = body.querySelector('.header')
 
 const logo      = body.querySelector('.logo a')
-const a         = body.querySelectorAll('a')
+const a         = body.querySelectorAll('.a')
 const rs        = body.querySelectorAll('.rs')
 
 const principal = body.querySelector('.principal')
