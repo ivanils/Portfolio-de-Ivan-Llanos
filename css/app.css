@@ -929,7 +929,7 @@ body .cursorpack.activo_tres .fancy {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-.header .nav .rrss .rs.inst:hover {
+.header .nav .rrss .rs.link:hover {
   -webkit-filter: drop-shadow(0 0 5px orange);
           filter: drop-shadow(0 0 5px orange);
 }
@@ -969,10 +969,11 @@ body .cursorpack.activo_tres .fancy {
   -webkit-transform-origin: top;
           transform-origin: top;
 }
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   .principal .fondo {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+    height: 150%;
   }
 }
 .principal .fondo .uno {
@@ -1206,7 +1207,7 @@ body .cursorpack.activo_tres .fancy {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   .contenido {
     font-size: 55%;
   }
@@ -1574,16 +1575,39 @@ body .cursorpack.activo_tres .fancy {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 1600px) {
+@media (max-width: 2300px) {
+  .muestrario {
+    font-size: 85%;
+  }
+}
+@media (max-width: 2000px) {
+  .muestrario {
+    font-size: 75%;
+  }
+}
+@media (max-width: 1700px) {
   .muestrario {
     font-size: 65%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  }
+}
+@media (max-width: 1500px) {
+  .muestrario {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .muestrario {
+    font-size: 40%;
+  }
+}
+@media (max-width: 950px) {
+  .muestrario {
+    font-size: 35%;
   }
 }
 @media (max-width: 600px) {
   .muestrario {
-    font-size: 17%;
+    font-size: 23%;
   }
 }
 .muestrario .h4_work {
@@ -1601,7 +1625,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 600px) {
   .muestrario .h4_work {
-    font-size: 600%;
+    font-size: 500%;
     margin-bottom: 25%;
   }
 }
@@ -1696,6 +1720,11 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1600px) {
   .muestrario .web .h2 {
     -webkit-text-stroke: 4px white;
+  }
+}
+@media (max-width: 1200px) {
+  .muestrario .web .h2 {
+    -webkit-text-stroke: 2px white;
   }
 }
 @media (max-width: 600px) {

@@ -451,7 +451,7 @@ body .cursorpack.activo_tres{
         font-size: 1.8em;
         font-family: 'Days One', sans-serif;
         transition: .1s;
-        &.inst:hover{
+        &.link:hover{
           filter: drop-shadow(0 0 5px orange);
         }
         &.git:hover{
@@ -476,8 +476,9 @@ body .cursorpack.activo_tres{
     @include flex( column, nowrap, center, center);
     z-index: -1; 
     transform-origin: top;
-    @media (max-width:1600px){
+    @media (max-width:1800px){
       transform: scale(0.6);
+      height: 150%;
     }
     .uno{
       width: 50em;
@@ -638,7 +639,7 @@ body .cursorpack.activo_tres{
   height: 100%;
   // background-color: purple;
   @include flex( row, nowrap, center, center);
-  @media (max-width:1600px){
+  @media (max-width:1800px){
     font-size: 55%;
   }
   @media (max-width:600px){
@@ -885,13 +886,26 @@ body .cursorpack.activo_tres{
   height: 100vh;
   // background-color: red;
   @include flex(column, nowrap, center, center);
-  @media (max-width:1600px){
+  @media (max-width:2300px){
+    font-size: 85%;
+  }
+  @media (max-width:2000px){
+    font-size: 75%;
+  }
+  @media (max-width:1700px){
     font-size: 65%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  }
+  @media (max-width:1500px){
+    font-size: 50%;
+  }
+  @media (max-width:1200px){
+    font-size: 40%;
+  }
+  @media (max-width:950px){
+    font-size: 35%;
   }
   @media (max-width:600px){
-    font-size: 17%;
+    font-size: 23%;
   }
   .h4_work{
     font-family: 'Poppins', sans-serif;
@@ -903,7 +917,7 @@ body .cursorpack.activo_tres{
     transform: scale(0) translateY(-100vh);
     transition: 1s;
     @media (max-width:600px){
-      font-size: 600%;
+      font-size: 500%;
       margin-bottom: 25%;
     }
     &.entrar{
@@ -970,6 +984,9 @@ body .cursorpack.activo_tres{
       transition: opacity 3s ease;
       @media (max-width:1600px){
         -webkit-text-stroke: 4px white;
+      }
+      @media (max-width:1200px){
+        -webkit-text-stroke: 2px white;
       }
       @media (max-width:600px){
         -webkit-text-stroke: 1px white;
