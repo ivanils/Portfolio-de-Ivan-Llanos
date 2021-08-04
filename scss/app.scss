@@ -82,9 +82,13 @@ body{
       right: 1.5em;
       position: absolute;
       z-index: 7;
+      transition: 0.5s ease-in-out;
       @media (max-width:600px){
         display: block;  
         pointer-events: auto;  
+      }
+      &.esconder{
+        top: -10em;
       }
       &.back{
         opacity: 0;
@@ -642,15 +646,17 @@ body .cursorpack.activo_tres{
   @media (max-width:1800px){
     font-size: 55%;
   }
+  @media (max-width:850px) {
+    @include flex(column, nowrap, center, center);
+  }
   @media (max-width:600px){
     font-size: 45%;
-    @include flex( column, nowrap, center, center);
   }
   .par_izq{
     // background-color: red;
     flex: 1;
     @include flex(column, wrap, center, flex-end);
-    @media (max-width:600px){
+    @media (max-width: 850px) {
       @include flex(column, nowrap, flex-end, flex-start);
       margin-bottom: 5em;
       flex: auto;
@@ -670,7 +676,7 @@ body .cursorpack.activo_tres{
         -webkit-text-stroke: 0px white;
         color: white;   
       }
-      @media (max-width: 600px){
+      @media (max-width: 850px){
         margin: 0;
         // background-color: red;
       }
@@ -690,7 +696,7 @@ body .cursorpack.activo_tres{
     // background: red;
     flex: 1;
     @include flex(column, wrap, center, flex-start);
-    @media (max-width:600px){
+    @media (max-width:850px){
       @include flex(column, nowrap, flex-start, flex-start);
       flex: auto;
       width: 70%;
@@ -701,7 +707,7 @@ body .cursorpack.activo_tres{
       // background-color: magenta;
       font-size: 2.5em;
       font-weight: 30;
-      @media (max-width: 600px){
+      @media (max-width: 850px){
         margin: 0;
         // background-color: yellow;
       } 
@@ -760,6 +766,9 @@ body .cursorpack.activo_tres{
     @media (max-width:1600px){
       width: 30%;
     }
+    @media (max-width: 850px) {
+      width: 50%;
+    }
     @media (max-width:600px){
       width: 70%;
     }
@@ -780,15 +789,19 @@ body .cursorpack.activo_tres{
   @media (max-width:1600px){
     font-size: 65%;
   }
+  @media (max-width: 850px) {
+    @include flex( column, nowrap, center, center);
+    font-size: 60%;   
+  }
   @media (max-width:600px){
-    @include flex( column, nowrap, center, flex-start);
     font-size: 50%;
   }
   .development{
     text-align: left;
     // background-color: purple;
     flex: 1;
-    @media (max-width:600px) {
+    @media (max-width:850px) {
+      width: 100%;
       margin-bottom: 5em;
     }
     .h2_sk{
@@ -818,6 +831,10 @@ body .cursorpack.activo_tres{
     margin-left: 4%;
     flex: 1;
     text-align: right;
+    @media (max-width: 850px) {
+      margin: 0;
+      width: 100%;
+    }
     .h2_sk{
       -webkit-text-stroke: 3px white;
       color: transparent;
@@ -858,26 +875,6 @@ body .cursorpack.activo_tres{
     // position: relative;
     margin: 1em auto 1em auto;
   }
-  // &::after{
-  //   content: '';
-  //   width: 70%;
-  //   height: 5px;
-  //   background-color: rgba(255, 255, 255, 0.3);
-  //   border-radius: 3px;
-  //   position: absolute;
-  //   bottom: 100%;
-  //   left: 15%;
-  // }
-  // &::before{
-  //   content: '';
-  //   width: 70%;
-  //   height: 5px;
-  //   background-color: rgba(255, 255, 255, 0.3);
-  //   border-radius: 3px;
-  //   position: absolute;
-  //   top: 100%;
-  //   left: 15%;
-  // }
 }
 
 
@@ -916,6 +913,10 @@ body .cursorpack.activo_tres{
     filter: drop-shadow(0 0 0px white);
     transform: scale(0) translateY(-100vh);
     transition: 1s;
+    @media (max-width: 850px) {
+      font-size: 500%; 
+      margin-bottom: 10%;
+    }
     @media (max-width:600px){
       font-size: 500%;
       margin-bottom: 25%;
@@ -962,7 +963,7 @@ body .cursorpack.activo_tres{
       transition-delay: 0s;
       transition: opacity 3s ease;
       &:last-child{
-        @media (max-width: 600px) {
+        @media (max-width: 850px) {
           display: none;
         }
       }

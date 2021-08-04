@@ -224,8 +224,12 @@ secciones.forEach((v,i)=>{
     window.addEventListener('scroll', (e) => {
         ahora = window.pageYOffset
             if (antes < ahora){
-                header.classList.add('esconder')}
-            else { header.classList.remove('esconder') }
+                header.classList.add('esconder')
+                burguer.classList.add('esconder')
+            }else{
+                header.classList.remove('esconder')
+                burguer.classList.remove('esconder')
+            }
 
             if( ahora <= 0 ){ antes = 0}
             else{ antes = ahora}

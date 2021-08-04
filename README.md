@@ -1,9 +1,9 @@
 ## Descripción 🏝
-Este proyecto es mi portfolio personal, el cual he realizado como proyecto final
+Este proyecto es mi portfolio personal, el cual he realizado como proyecto final del máster en Desarrollo Web de la escuela Trazos.
 
 
 ## Autor ✒️
-**IVÁN LLANOS**
+**Iván Llanos**
 
 * [LinkedIn](https://www.linkedin.com/in/ivan-llanos-santamaria)
 * [Github](https://github.com/ivanils)
@@ -15,7 +15,7 @@ Este proyecto es mi portfolio personal, el cual he realizado como proyecto final
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
   
 ## Contratación
-Si quieres contratarme puedes escribirme a ivan.llanos.santamaria@gmail.com para consultas
+Si quieres contratarme puedes escribirme a hola@ivanllanos.com para consultas
 
 
 ## Licencia 📄
