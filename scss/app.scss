@@ -376,7 +376,7 @@ body .cursorpack.activo_tres{
     transform: translateY(-6vh);
   }
   @media (max-width:600px){
-    position: relative;
+    display: none;
   }
   .nav{
     :hover{
@@ -387,9 +387,6 @@ body .cursorpack.activo_tres{
     @include flex(row, nowrap, space-between, center);
     @media (max-width:1600px){
       font-size: 80%;
-    }
-    @media (max-width:600px){
-      display: none;
     }
     .logo{
       flex: 1;

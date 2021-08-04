@@ -790,7 +790,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 600px) {
   .header {
-    position: relative;
+    display: none;
   }
 }
 .header .nav {
@@ -817,11 +817,6 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1600px) {
   .header .nav {
     font-size: 80%;
-  }
-}
-@media (max-width: 600px) {
-  .header .nav {
-    display: none;
   }
 }
 .header .nav .logo {
