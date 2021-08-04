@@ -1,0 +1,37 @@
+
+@keyframes slideright{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes moverseizqda{
+  from { transform: rotate(0deg) translateX(-10em) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(-10em) rotate(-360deg); }
+}
+@keyframes moversedrcha{
+  from { transform: rotate(0deg) translateX(25em) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(25em) rotate(-360deg); }
+}
+@keyframes moversecentro{
+  from { transform: rotate(0deg) translateX(-20em) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateX(-20em) rotate(360deg); }
+}
+@keyframes moversecuatro{
+  from { transform: rotate(0deg) translateX(-5em) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateX(-5em) rotate(360deg);}
+} 
+@keyframes moversecinco{
+  from { transform: rotate(0deg) translateX(-15em) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateX(-15em) rotate(360deg);}
+} 
