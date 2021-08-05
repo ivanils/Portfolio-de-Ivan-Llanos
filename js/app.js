@@ -35,11 +35,7 @@ const skills     = body.querySelector('.skills')
     const skillsTitle= skills.querySelectorAll('.h3_sk')
 
 const muestrario= body.querySelector('.muestrario')
-    const h4        = muestrario.querySelector('.h4_work')
-    const grafico   = muestrario.querySelector('.grafico')
-        const h2g        = grafico.querySelectorAll('.h2')
-    const web       = muestrario.querySelector('.web')
-        const h2w        = web.querySelectorAll('.h2')
+    const rama      = muestrario.querySelectorAll('.mues')
 
 let cursorin = ()=>{
     cursorpack.classList.add('activo')
@@ -75,9 +71,6 @@ window.addEventListener('mousemove', (e)=>{
     else{fancy.style.opacity = `1`}
 })
 
-window.addEventListener( onmousewheel,(e)=>{
-    console.log(e.deltaY)
-})
 
 a.forEach((v,i)=>{
     a[i].addEventListener('mouseover', cursorintres)
@@ -115,57 +108,6 @@ apellido.addEventListener('mouseout', ()=>{
     cursorout()
 })
 
-web.addEventListener('mouseover', cursorin)
-web.addEventListener('mouseout', cursorout)
-web.addEventListener('click', ()=>{
-    h2w.forEach((v,i)=>{
-        h2w[i].classList.toggle('activo')
-        if(h2w[i].classList.contains('activo')){web.classList.add('opacity')}
-        else{web.classList.remove('opacity')}
-    })
-    ven_web.classList.add('activo')
-    ventana.classList.add('activo')
-    burguer.classList.add('back')
-    equis.forEach((v,i)=>{
-        equis[i].addEventListener('mouseover', cursorintres)
-        equis[i].addEventListener('mouseout', cursorouttres)
-    })
-})
-
-grafico.addEventListener('mouseover', cursorin)
-grafico.addEventListener('mouseout', cursorout)
-grafico.addEventListener('click', ()=>{
-    h2g.forEach((v,i)=>{
-        h2g[i].classList.toggle('activo')
-        if(h2g[i].classList.contains('activo')){grafico.classList.add('opacity')}
-        else{grafico.classList.remove('opacity')}
-    })
-    ven_grafico.classList.add('activo')
-    ventana.classList.add('activo')
-    burguer.classList.add('back')
-    equis.forEach((v,i)=>{
-        equis[i].addEventListener('mouseover', cursorintres)
-        equis[i].addEventListener('mouseout', cursorouttres)
-    })
-})
-
-
-equis.forEach((v,i)=>{
-    equis[i].addEventListener('click',()=>{
-        ventana.classList.remove('activo')
-        ven_web.classList.remove('activo')
-        web.classList.remove('opacity')
-        h2w.forEach((v,j)=>{
-            h2w[j].classList.remove('activo')
-        })
-        ven_grafico.classList.remove('activo')
-        grafico.classList.remove('opacity')
-        h2g.forEach((v,j)=>{
-            h2g[j].classList.remove('activo')
-        })
-        burguer.classList.remove('back')
-    })
-})
     
 // MENU RESPONSIVE
 
@@ -297,22 +239,24 @@ let efectoScrollColor = ( elemento , altura, color) => {
 
 
 efectoScroll(hello, 1.3)
-efectoScroll(grafico, 1.2)
-efectoScroll(web, 1.2)
-efectoScroll(h4, 1.2)
 efectoScrollPrincipal(nombre, 10)
 
 
 info.forEach((v,i)=>{
     efectoScroll(info[i], 1.3)
 })
-
 skillsName.forEach((v,i)=>{
     efectoScroll(skillsName[i], 1.2)
 })
 skillsTitle.forEach((v,i)=>{
-    efectoScroll(skillsTitle[i], 1.3)
+    efectoScroll(skillsTitle[i], 1.2)
 })
+rama.forEach((v,i)=>{
+    efectoScroll(rama[i], 1)
+    rama[i].addEventListener('mouseover', cursorin)
+    rama[i].addEventListener('mouseout', cursorout)
+})
+
 
 efectoScrollColor(me, 1.5, 'orange')
 efectoScrollColor(skills, 1.5, 'turquesa')
