@@ -1034,6 +1034,12 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 600px) {
   .contenido {
     font-size: 45%;
+    padding: 0;
+  }
+}
+@media (max-width: 350px) {
+  .contenido {
+    font-size: 35%;
   }
 }
 .contenido .par_izq {
@@ -1188,6 +1194,11 @@ body .cursorpack.activo_tres .fancy {
     font-size: 65%;
   }
 }
+@media (max-width: 350px) {
+  .me {
+    font-size: 40%;
+  }
+}
 .me .h2_info {
   width: 50%;
   margin: 0 auto 1.5em;
@@ -1246,6 +1257,11 @@ body .cursorpack.activo_tres .fancy {
     width: 70%;
   }
 }
+@media (max-width: 350px) {
+  .me .p_info {
+    font-size: 215%;
+  }
+}
 .me .p_info.entrar {
   right: 0;
   opacity: 1;
@@ -1298,6 +1314,11 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 600px) {
   .skills {
     font-size: 50%;
+  }
+}
+@media (max-width: 350px) {
+  .skills {
+    font-size: 40%;
   }
 }
 .skills .development {
@@ -1422,6 +1443,11 @@ body .cursorpack.activo_tres .fancy {
     font-size: 50%;
   }
 }
+@media (max-width: 350px) {
+  .muestrario {
+    font-size: 40%;
+  }
+}
 .muestrario .h4_mues {
   width: 50%;
   margin: 0 auto 4em;
@@ -1449,6 +1475,11 @@ body .cursorpack.activo_tres .fancy {
     margin: 0 auto 3em;
   }
 }
+@media (max-width: 350px) {
+  .muestrario .h4_mues {
+    margin: 1em auto 2.5em;
+  }
+}
 .muestrario .h4_mues.entrar {
   left: 0;
   opacity: 1;
@@ -1461,6 +1492,12 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 600px) {
   .muestrario .h4_mues.entrar::after {
     width: 3em;
+  }
+}
+@media (max-width: 350px) {
+  .muestrario .h4_mues.entrar::after {
+    left: 10%;
+    width: 2.8em;
   }
 }
 .muestrario .web, .muestrario .grafico, .muestrario .ilustracion {
