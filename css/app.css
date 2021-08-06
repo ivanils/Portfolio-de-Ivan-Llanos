@@ -1674,7 +1674,6 @@ body .cursorpack.activo_tres .fancy {
   left: 0;
 }
 .muestrario .web:hover .cont_graf, .muestrario .grafico:hover .cont_graf, .muestrario .ilustracion:hover .cont_graf {
-  padding: 7% 0%;
   -webkit-transform: scale(8);
           transform: scale(8);
   -webkit-filter: blur(5em);
