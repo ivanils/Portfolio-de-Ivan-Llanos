@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="icon" type="image/png" href="assets/favicon5.png">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="icon" type="image/png" href="../assets/favicon5.png">
     <script defer src="https://kit.fontawesome.com/56facdea9c.js" crossorigin="anonymous"></script>
-    <script defer src="js/app.js" ></script>
+    <script defer src="app_web.js" ></script>
 </head>
 <body>
     <div class="cursorpack">
@@ -26,18 +26,13 @@
         <div class="menu_responsive">
             <ul class="secciones_responsive">
                 <li class="li_responsive">
-                    <a class="a" title="Me" href="#me" title="ME">
-                        <h5 class="h5_responsive">ME</h5>
-                    </a>
-                </li>
-                <li class="li_responsive">
-                    <a class="a" title="Skills" href="#skills" title="">
-                        <h5 class="h5_responsive">SKILLS</h5>
+                    <a class="a" title="Me" href="../index.html" title="ME">
+                        <h5 class="h5_responsive">HOME</h5>
                     </a>
                 </li>
                 <li class="li_responsive">
                     <a class="a" title="Work" href="#work" title="">
-                        <h5 class="h5_responsive">WORK</h5>
+                        <h5 class="h5_responsive">MORE WORK</h5>
                     </a>
                 </li>
             </ul>
@@ -57,7 +52,7 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a class="a" title="Home" href="#">I<span class="ele">L</span></a>
+                <a class="a" title="Home" href="../index.html">I<span class="ele">L</span></a>
             </div>
             <ul class="ul">
                 <li class="li">
@@ -83,7 +78,7 @@
             </ul>
         </nav>
     </header>
-    <section class="principal">
+    <section class="principal web">
         <div class="fondo">
             <div class="desenfoque uno"></div>
             <div class="desenfoque dos"></div>
@@ -91,64 +86,33 @@
             <div class="desenfoque cuatro"></div>
             <div class="desenfoque cinco"></div>
         </div>
-        <div class="contenido">
-            <div class="par_izq">
-                <h2 class="h2 ">
-                    <a class="nombre entrar" title="Ivan" href="#me">Iván</a>
-                </h2>
-                <h2 class="h2 ">
-                    <a class="apellido" title="Llanos" href="#me">Llanos</a>
-                </h2>
-            </div>
-            <div class="par_drc">
-                <h1 class="h1">Front End Development,
-                <span class="d_block">Graphic Design</span>
-                <span class="d_block">and</span>
-                <span class="d_block">Illustration.</span></h1>
-            </div>
-        </div>
     </section>
-
-    <div class="me" id="me">
-        <h2 class="h2_info">Hello!</h2>
-        <p class="p_info">I am a multidisciplinary Front end Developer trained in web design and development and graphic design. Also, I am graduated in Fine Arts.
-        </p>
-        <p class="p_info">Currently I am still training in some web development frameworks and other graphic content softwares.</p>
-        <p class="p_info">My skills range from the logical process of a web developer to the creative section of fine arts and graphic design. I love building the functional from the invisible part and creating and managing the design and colors for the final result.</p>
-    </div>
-
-    <div class="skills" id="skills">
-        <div class="development">
-            <h2 class="h2_sk">Web Development</h2>
-            <h3 class="h3_sk">HTML 5</h3>
-            <h3 class="h3_sk">CSS 3</h3>
-            <h3 class="h3_sk">SCSS</h3>
-            <h3 class="h3_sk">JavaScript</h3>
-            <h3 class="h3_sk">jQuery</h3>
-            <h3 class="h3_sk">Angular</h3>
-            <h3 class="h3_sk">TypeScript</h3>
-        </div>
-        <div class="design">
-            <h2 class="h2_sk">Graphic Design</h2>
-            <h3 class="h3_sk">Photoshop</h3>
-            <h3 class="h3_sk">Illustrator</h3>
-            <h3 class="h3_sk">ProCreate</h3>
-            <h3 class="h3_sk">InDesign</h3>
-            <h3 class="h3_sk">After Effects</h3>
-        </div>
-    </div>
-
-    <div class="muestrario" id="work">
-        <h4 class="h4_mues">Work</h4>
-        <a href="web/web.html" title="Web development works">
-            <div class="mues web">
-                <div class="cont_graf">
-                    <h3 class="h3_mues">Web Development</h3>
-                    <p class="p_mues">Front End.</p>
-                </div>
-                <div class="blur"></div>
+    <div class="escaparate web">
+        <h3 class="h3_web"><span class="span_web"> Web Development ‎</span> Front End</h3>
+        <div class="trabajo t_web">
+            <div class="trabajo_izqda">
+                <img src="../assets/web/miniaturaPortfolio.jpg" alt="Portfolio">
             </div>
-        </a>
+            <div class="trabajo_drcha">
+                <h4 class="h4_web">Portfolio</h4>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+        <div class="trabajo t_web">
+            <div class="trabajo_izqda">
+                <h4 class="h4_web">Portfolio</h4>
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="trabajo_drcha">
+                <img src="../assets/web/miniaturaPortfolio.jpg" alt="Portfolio">
+            </div>
+        </div>
+        <div class="trabajo t_web">
+            <p class="p_coming">More coming soon</p>
+        </div>
+    </div>
+    <div class="muestrario" id="work">
+        <h4 class="h4_mues">WORK</h4>
         <a href="#" title="Graphic design works">
             <div class="mues grafico">
                 <div class="cont_graf">
