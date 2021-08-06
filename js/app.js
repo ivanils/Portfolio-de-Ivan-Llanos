@@ -35,7 +35,22 @@ const skills     = body.querySelector('.skills')
     const skillsTitle= skills.querySelectorAll('.h3_sk')
 
 const muestrario= body.querySelector('.muestrario')
+    const h4_mues   = muestrario.querySelector('.h4_mues')
     const rama      = muestrario.querySelectorAll('.mues')
+
+
+// Deteccion navegador
+
+let cual = navigator.userAgent.toLowerCase()
+    if (cual.indexOf('safari') != -1) { 
+    if (cual.indexOf('chrome') > -1) {
+        fancy.classList.remove('safari')
+    } else {
+        fancy.classList.add('safari')}
+}
+
+
+// CURSOR
 
 let cursorin = ()=>{
     cursorpack.classList.add('activo')
@@ -55,7 +70,6 @@ let cursoroutdos = () => {
 let cursorouttres = () => {
     cursorpack.classList.remove('activo_tres')
 }
-
 
 window.addEventListener('mousemove', (e)=>{
     // console.log(e)
@@ -176,8 +190,8 @@ secciones.forEach((v,i)=>{
             if( ahora <= 0 ){ antes = 0}
             else{ antes = ahora}
 
-            console.log(antes) 
-            console.log(ahora) 
+            // console.log(antes) 
+            // console.log(ahora) 
     })
 
 // Efectos de SCROLL
@@ -240,6 +254,7 @@ let efectoScrollColor = ( elemento , altura, color) => {
 
 efectoScroll(hello, 1.3)
 efectoScrollPrincipal(nombre, 10)
+efectoScroll(h4_mues, 1.3)
 
 
 info.forEach((v,i)=>{
@@ -252,7 +267,7 @@ skillsTitle.forEach((v,i)=>{
     efectoScroll(skillsTitle[i], 1.2)
 })
 rama.forEach((v,i)=>{
-    efectoScroll(rama[i], 1)
+    efectoScroll(rama[i], 1.2)
     rama[i].addEventListener('mouseover', cursorin)
     rama[i].addEventListener('mouseout', cursorout)
 })
