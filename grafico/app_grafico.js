@@ -28,7 +28,9 @@ const muestrario= body.querySelector('.muestrario')
     const rama      = muestrario.querySelectorAll('.mues')
 
 const trabajo   = body.querySelectorAll('.trabajo')
+    const muestra   = body.querySelectorAll('.muestra')
 
+const img_graf  = body.querySelectorAll('.img_graf')
 
 
 
@@ -228,5 +230,28 @@ rama.forEach((v,i)=>{
 trabajo.forEach((v,i)=>{
     efectoScroll(trabajo[i], 1.2)
 })
+muestra.forEach((v,i)=>{
+    efectoScroll(muestra[i], 1.5)
+    muestra[i].addEventListener('mouseover', cursorin)
+    muestra[i].addEventListener('mouseout', cursorout)
+    // let moverImagen = (event)=>{
+    //     let anchoElemento       = img_graf[i].offsetWidth
+    //     let alturaElemento      = img_graf[i].offsetHeight
+    //     let medioX  = img_graf[i].offsetLeft + (anchoElemento/2)
+    //     let medioY  = img_graf[i].offsetTop + (alturaElemento/2) 
+    //     // console.log(medioX, medioY)    
+    //     let cursorX = event.clientY - medioX
+    //     let cursorY = event.clientY - medioY
+    //     console.log(cursorX, cursorY)
+    //     let rotarY  = 25*cursorY/(alturaElemento/2)
+    //     let rotarX  = 25*cursorX/(anchoElemento/2)
+
+    //     img_graf[i].style.transform = `perspective(1000px) rotateX(${rotarX}deg) rotateY(${rotarY}deg)`
+    // }
+    // img_graf[i].addEventListener('mousemove', moverImagen)
+})
 
 efectoScrollColor(muestrario, 1.7, 'gris')
+
+// Efecto mover imagen
+
