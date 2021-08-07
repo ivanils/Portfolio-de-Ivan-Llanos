@@ -219,7 +219,6 @@ let efectoScrollColor = ( elemento , altura, color) => {
     })
 }
 
-efectoScroll(h4_mues, 1.3)
 
 rama.forEach((v,i)=>{
     efectoScroll(rama[i], 1.2)
