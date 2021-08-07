@@ -1290,7 +1290,7 @@ body .cursorpack.activo_tres{
     font-size: 65%;
   }
   @media (max-width: 800px) {
-    font-size: 50%;      
+    font-size: 60%;      
   }
   @media (max-width: 600px) {
     font-size: 30%;      
@@ -1301,16 +1301,17 @@ body .cursorpack.activo_tres{
     font-size: 5em;
     filter: drop-shadow(0 0 5px white);
     @media (max-width: 600px) {
+      font-size: 7em;
       height: auto;
       display: block;
       text-align: center;
-      margin: 40vh 0 35vh 0;      
+      margin: 45vh 0 35vh 0;      
     }
   }
   .t_grafico:not(:last-child){
     width: 70%;
     min-height: 130vh;
-    padding: 30vh 0;
+    // padding: 30vh 0;
     opacity: 1;
     transition: 1s;
     margin: 10vh 0 20vh 0;
@@ -1321,6 +1322,7 @@ body .cursorpack.activo_tres{
     }
     @media (max-width:1024px) {
       @include flex(column, nowrap, center, center);
+      min-height: 0vh;
     }
     @media (max-width:600px) {
       margin: 5vh 0;
@@ -1329,11 +1331,21 @@ body .cursorpack.activo_tres{
   }
   .muestra{
     width: 30%;
-    background-color: turquoise;
+    // background-color: turquoise;
     margin: auto;
     position: relative;
     opacity: 0;
     transition: 1s ease;
+    @media (max-width: 1024px) {
+      width: 60em;
+      min-height: 60em;
+      margin: 0vh 0 25vh 0;
+      @include flex(column, nowrap, center, center);
+    }
+    @media (max-width: 350px) {
+      width: 50em;
+      min-height: 50em;
+    }
     .img_graf{
       border-radius: 3em;
       max-width: 100%;
@@ -1344,10 +1356,16 @@ body .cursorpack.activo_tres{
     &.m_uno{
       width: 35%;
       left: 30%;
-      background-color: yellow;
+      // background-color: yellow;
       bottom: 30vh;
       transform: rotate(0deg);
       transition: 1s;
+      @media (max-width: 1024px) {
+        left: auto;
+        bottom: auto;
+        width: 70%;
+        transform: scale(0.7);
+      }
       .img_graf:nth-child(1){
         transition: 1s;
         transform: rotate(0deg) translateX(0%);
@@ -1365,11 +1383,16 @@ body .cursorpack.activo_tres{
     }
     &.m_dos{
       left: -10%;
-      background-color: green;
+      // background-color: green;
       bottom: 10vh;
       left: -30%;
       transform: rotate(0deg);
       transition: 1s;
+      @media (max-width: 1024px) {
+        left: auto;
+        bottom: auto;
+        transform: scale(0.7);
+      }
       .img_graf:nth-child(1){
         transition: 1s;
         transform: rotate(0deg) translateX(0%);
@@ -1387,10 +1410,15 @@ body .cursorpack.activo_tres{
     }
     &.m_tres{
       left: 30%;
-      background-color: blue;
+      // background-color: blue;
       top: 35vh;
       transform: rotate(0deg);
       transition: 1s;
+      @media (max-width: 1024px) {
+        left: auto;
+        top: auto;
+        transform: scale(0.7);
+      }
       .img_graf:nth-child(1){
         transition: 1s;
         transform: rotate(0deg) translateX(0%);
@@ -1410,8 +1438,13 @@ body .cursorpack.activo_tres{
       top: 50vh;
       left: -40%;
       transform: rotate(0deg);
-      background-color: purple;
+      // background-color: purple;
       transition: 1s;
+      @media (max-width: 1024px) {
+        left: auto;
+        top: auto;
+        transform: scale(0.7);
+      }
       .img_graf:nth-child(1){
         transition: 1s;
         transform: rotate(0deg) translateX(0%);
@@ -1430,9 +1463,16 @@ body .cursorpack.activo_tres{
   .m_uno.entrar{
     width: 35%;
     left: 30%;
-    background-color: yellow;
+    // background-color: yellow;
     bottom: 30vh;
     transform: rotate(-5deg);
+    @media (max-width: 1024px) {
+      left: auto;
+      bottom: auto;
+      width: 70%;
+      transform: rotate(0deg);
+      transform: scale(1);
+    }
     .img_graf:nth-child(1){
       transform: rotate(10deg) translateX(10%);
       filter: blur(0.5em);
@@ -1443,6 +1483,9 @@ body .cursorpack.activo_tres{
     }
     .img_graf:nth-child(3){
       filter: drop-shadow(0 0 10px black);
+      @media (max-width: 1024px) {
+        filter: drop-shadow(0 0 20px white);
+      }
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
@@ -1461,10 +1504,16 @@ body .cursorpack.activo_tres{
   }
   .m_dos.entrar{
     left: -10%;
-    background-color: green;
+    // background-color: green;
     bottom: 10vh;
     left: -30%;
     transform: rotate(5deg);
+    @media (max-width: 1024px) {
+      left: auto;
+      bottom: auto;
+      transform: rotate(0deg);
+      transform: scale(1);
+    }
     .img_graf:nth-child(1){
       transform: rotate(10deg) translateX(15%);
       filter: blur(0.5em);
@@ -1475,6 +1524,9 @@ body .cursorpack.activo_tres{
     }
     .img_graf:nth-child(3){
       filter: drop-shadow(0 0 10px black);
+      @media (max-width: 1024px) {
+        filter: drop-shadow(0 0 20px white);
+      }
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
@@ -1493,9 +1545,15 @@ body .cursorpack.activo_tres{
   }
   .m_tres.entrar{
     left: 30%;
-    background-color: blue;
+    // background-color: blue;
     top: 35vh;
     transform: rotate(10deg);
+    @media (max-width: 1024px) {
+      left: auto;
+      top: auto;
+      transform: rotate(0deg);
+      transform: scale(1);
+    }
     .img_graf:nth-child(1){
       transform: rotate(10deg) translateX(15%);
       filter: blur(0.5em);
@@ -1506,6 +1564,9 @@ body .cursorpack.activo_tres{
     }
     .img_graf:nth-child(3){
       filter: drop-shadow(0 0 10px black);
+      @media (max-width: 1024px) {
+        filter: drop-shadow(0 0 20px white);
+      }
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
@@ -1526,7 +1587,12 @@ body .cursorpack.activo_tres{
     top: 50vh;
     left: -40%;
     transform: rotate(-20deg);
-    background-color: purple;
+    @media (max-width: 1024px) {
+      left: auto;
+      top: auto;
+      transform: rotate(0deg);
+      transform: scale(1);
+    }
     .img_graf:nth-child(1){
       transform: rotate(30deg) translateX(15%);
       filter: blur(0.5em);
@@ -1534,6 +1600,9 @@ body .cursorpack.activo_tres{
     .img_graf:nth-child(2){
       filter: drop-shadow(0 0 10px black);
       transform: translateY(15%);
+      @media (max-width: 1024px) {
+        filter: drop-shadow(0 0 20px white);
+      }
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
@@ -1555,12 +1624,6 @@ body .cursorpack.activo_tres{
     // background-color: lime;
     @media (max-width: 1024px) {
       font-size: 4em;
-      border-bottom: 5px solid white;
-      border-radius: 3px;
-    }
-    @media (max-width: 800px) {
-      font-size: 5em;
-      border-bottom: 3px solid white;
     }
   }
 }
