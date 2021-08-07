@@ -1227,7 +1227,6 @@ body .cursorpack.activo_tres{
             transform: rotate(10deg);
             @media (max-width:1024px) {
               width: 80%;
-              transform: rotate(10deg);
             }
             @media (max-width:600px) {
               border-radius: 3em;
@@ -1243,7 +1242,7 @@ body .cursorpack.activo_tres{
       }
       &.entrar{
         opacity: 1;
-        img{
+        .a_t_web img{
           transition: 1s ease;
           border-radius: 1em;
           transform: rotate(10deg);

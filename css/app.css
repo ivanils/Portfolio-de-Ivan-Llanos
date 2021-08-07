@@ -2174,8 +2174,6 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1024px) {
   .escaparate .t_web:nth-child(odd) .trabajo_drcha .a_t_web img {
     width: 80%;
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
   }
 }
 @media (max-width: 600px) {
@@ -2191,7 +2189,7 @@ body .cursorpack.activo_tres .fancy {
 .escaparate .t_web:nth-child(odd).entrar {
   opacity: 1;
 }
-.escaparate .t_web:nth-child(odd).entrar img {
+.escaparate .t_web:nth-child(odd).entrar .a_t_web img {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   border-radius: 1em;
@@ -2199,7 +2197,7 @@ body .cursorpack.activo_tres .fancy {
           transform: rotate(10deg);
 }
 @media (max-width: 1024px) {
-  .escaparate .t_web:nth-child(odd).entrar img {
+  .escaparate .t_web:nth-child(odd).entrar .a_t_web img {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-filter: drop-shadow(0 0 10px white);
@@ -2207,7 +2205,7 @@ body .cursorpack.activo_tres .fancy {
   }
 }
 @media (max-width: 600px) {
-  .escaparate .t_web:nth-child(odd).entrar img {
+  .escaparate .t_web:nth-child(odd).entrar .a_t_web img {
     border-radius: 3em;
   }
 }
