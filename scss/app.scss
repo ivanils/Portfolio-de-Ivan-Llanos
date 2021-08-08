@@ -1688,6 +1688,7 @@ body .cursorpack.activo_tres{
       &.opacity{
         @media (max-width:1024px) {
           opacity: 0;
+          pointer-events: none;
         }
       }
       .flizquierda{

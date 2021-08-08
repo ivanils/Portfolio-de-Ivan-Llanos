@@ -2882,6 +2882,7 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1024px) {
   .lightbox .contenedor_lightbox .flechas.opacity {
     opacity: 0;
+    pointer-events: none;
   }
 }
 .lightbox .contenedor_lightbox .flechas .flizquierda {
