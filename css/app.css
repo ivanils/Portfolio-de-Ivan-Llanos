@@ -1858,6 +1858,7 @@ body .cursorpack.activo_tres .fancy {
   font-size: 5em;
   -webkit-filter: drop-shadow(0 0 5px white);
           filter: drop-shadow(0 0 5px white);
+  text-transform: uppercase;
 }
 @media (max-width: 600px) {
   .escaparate_web .h3_web {
@@ -2290,6 +2291,7 @@ body .cursorpack.activo_tres .fancy {
   font-size: 5em;
   -webkit-filter: drop-shadow(0 0 5px white);
           filter: drop-shadow(0 0 5px white);
+  text-transform: uppercase;
 }
 @media (max-width: 600px) {
   .escaparate_grafico .h3_grafico {
@@ -2370,6 +2372,9 @@ body .cursorpack.activo_tres .fancy {
     width: 50em;
     min-height: 50em;
   }
+}
+.escaparate_grafico .muestra.d_none {
+  display: none;
 }
 .escaparate_grafico .muestra .img_graf {
   border-radius: 3em;
@@ -3009,5 +3014,75 @@ body .cursorpack.activo_tres .fancy {
   transition: 1s;
 }
 .overlay.activo {
+  pointer-events: auto;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.escaparate_ilustracion {
+  width: 100%;
+  max-width: 2600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1800px) {
+  .escaparate_ilustracion {
+    font-size: 75%;
+  }
+}
+@media (max-width: 1024px) {
+  .escaparate_ilustracion {
+    font-size: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .escaparate_ilustracion {
+    font-size: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .escaparate_ilustracion {
+    font-size: 30%;
+  }
+}
+.escaparate_ilustracion .h3_ilustracion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 94vh;
+  font-size: 5em;
+  -webkit-text-stroke: 4px white;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-filter: drop-shadow(0 0 5px white);
+          filter: drop-shadow(0 0 5px white);
+}
+@media (max-width: 600px) {
+  .escaparate_ilustracion .h3_ilustracion {
+    font-size: 7em;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 45vh 0 35vh 0;
+  }
 }

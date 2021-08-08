@@ -1048,6 +1048,7 @@ body .cursorpack.activo_tres{
     height: 94vh;
     font-size: 5em;
     filter: drop-shadow(0 0 5px white);
+    text-transform: uppercase;
     @media (max-width: 600px) {
       height: auto;
       display: block;
@@ -1300,6 +1301,7 @@ body .cursorpack.activo_tres{
     height: 94vh;
     font-size: 5em;
     filter: drop-shadow(0 0 5px white);
+    text-transform: uppercase;
     @media (max-width: 600px) {
       font-size: 7em;
       height: auto;
@@ -1345,6 +1347,9 @@ body .cursorpack.activo_tres{
     @media (max-width: 350px) {
       width: 50em;
       min-height: 50em;
+    }
+    &.d_none{
+      display: none;
     }
     .img_graf{
       border-radius: 3em;
@@ -1768,6 +1773,41 @@ body .cursorpack.activo_tres{
   pointer-events: none;
   transition: 1s;
   &.activo{
+    pointer-events: auto;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+// Ilustración
+.escaparate_ilustracion{
+  width: 100%;
+  max-width: 2600px;
+  @include flex( column, nowrap, center, center);
+  @media (max-width:1800px) {
+    font-size: 75%;
+  }
+  @media (max-width: 1024px) {
+    font-size: 65%;
+  }
+  @media (max-width: 800px) {
+    font-size: 60%;      
+  }
+  @media (max-width: 600px) {
+    font-size: 30%;      
+  }
+  .h3_ilustracion{
+    @include flex( row, nowrap, center, center);
+    height: 94vh;
+    font-size: 5em;
+    -webkit-text-stroke: 4px white;
+    color: transparent; 
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 5px white);
+    @media (max-width: 600px) {
+      font-size: 7em;
+      height: auto;
+      display: block;
+      text-align: center;
+      margin: 45vh 0 35vh 0;      
+    }
   }
 }
