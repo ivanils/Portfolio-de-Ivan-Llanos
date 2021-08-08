@@ -1352,6 +1352,9 @@ body .cursorpack.activo_tres{
       position: absolute;
       transform-style: preserve-3d;
       transform: perspective(1000px);
+      &.delante{
+        z-index: 2;
+      }
     }
     &.m_uno{
       width: 35%;
@@ -1366,7 +1369,7 @@ body .cursorpack.activo_tres{
         width: 70%;
         transform: scale(0.7);
       }
-      .img_graf:nth-child(1){
+      .img_graf:nth-child(3){
         transition: 1s;
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
@@ -1376,7 +1379,7 @@ body .cursorpack.activo_tres{
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
-      .img_graf:nth-child(3){
+      .img_graf:nth-child(1){
         transition: 1s;
         filter: drop-shadow(0 0 0px black);
       }
@@ -1473,7 +1476,7 @@ body .cursorpack.activo_tres{
       transform: rotate(0deg);
       transform: scale(1);
     }
-    .img_graf:nth-child(1){
+    .img_graf:nth-child(3){
       transform: rotate(10deg) translateX(10%);
       filter: blur(0.5em);
     }
@@ -1481,7 +1484,7 @@ body .cursorpack.activo_tres{
       transform: rotate(-20deg) translateX(-10%);
       filter: blur(0.5em);
     }
-    .img_graf:nth-child(3){
+    .img_graf:nth-child(1){
       filter: drop-shadow(0 0 10px black);
       @media (max-width: 1024px) {
         filter: drop-shadow(0 0 20px white);
@@ -1489,7 +1492,7 @@ body .cursorpack.activo_tres{
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
-      .img_graf:nth-child(1){
+      .img_graf:nth-child(3){
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
@@ -1497,7 +1500,7 @@ body .cursorpack.activo_tres{
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
-      .img_graf:nth-child(3){
+      .img_graf:nth-child(1){
         filter: drop-shadow(0 0 15px white); 
       }
     }
@@ -1514,7 +1517,7 @@ body .cursorpack.activo_tres{
       transform: rotate(0deg);
       transform: scale(1);
     }
-    .img_graf:nth-child(1){
+    .img_graf:nth-child(3){
       transform: rotate(10deg) translateX(15%);
       filter: blur(0.5em);
     }
@@ -1522,7 +1525,7 @@ body .cursorpack.activo_tres{
       transform: rotate(-20deg) translateX(-15%);
       filter: blur(0.5em);
     }
-    .img_graf:nth-child(3){
+    .img_graf:nth-child(1){
       filter: drop-shadow(0 0 10px black);
       @media (max-width: 1024px) {
         filter: drop-shadow(0 0 20px white);
@@ -1530,7 +1533,7 @@ body .cursorpack.activo_tres{
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
-      .img_graf:nth-child(1){
+      .img_graf:nth-child(3){
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
@@ -1538,7 +1541,7 @@ body .cursorpack.activo_tres{
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
-      .img_graf:nth-child(3){
+      .img_graf:nth-child(1){
         filter: drop-shadow(0 0 15px white); 
       }
     }
@@ -1554,7 +1557,7 @@ body .cursorpack.activo_tres{
       transform: rotate(0deg);
       transform: scale(1);
     }
-    .img_graf:nth-child(1){
+    .img_graf:nth-child(3){
       transform: rotate(10deg) translateX(15%);
       filter: blur(0.5em);
     }
@@ -1562,7 +1565,7 @@ body .cursorpack.activo_tres{
       transform: rotate(-20deg) translateX(-15%);
       filter: blur(0.5em);
     }
-    .img_graf:nth-child(3){
+    .img_graf:nth-child(1){
       filter: drop-shadow(0 0 10px black);
       @media (max-width: 1024px) {
         filter: drop-shadow(0 0 20px white);
@@ -1570,7 +1573,7 @@ body .cursorpack.activo_tres{
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
-      .img_graf:nth-child(1){
+      .img_graf:nth-child(3){
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
@@ -1578,7 +1581,7 @@ body .cursorpack.activo_tres{
         transform: rotate(0deg) translateX(0%);
         filter: blur(0em);
       }
-      .img_graf:nth-child(3){
+      .img_graf:nth-child(1){
         filter: drop-shadow(0 0 15px white); 
       }
     }
@@ -1593,11 +1596,11 @@ body .cursorpack.activo_tres{
       transform: rotate(0deg);
       transform: scale(1);
     }
-    .img_graf:nth-child(1){
+    .img_graf:nth-child(2){
       transform: rotate(30deg) translateX(15%);
       filter: blur(0.5em);
     }
-    .img_graf:nth-child(2){
+    .img_graf:nth-child(1){
       filter: drop-shadow(0 0 10px black);
       transform: translateY(15%);
       @media (max-width: 1024px) {
@@ -1606,11 +1609,11 @@ body .cursorpack.activo_tres{
     }
     &:hover{
       transform: rotate(0deg) scale(1.2);
-      .img_graf:nth-child(1){
+      .img_graf:nth-child(2){
         transform: rotate(0deg) translateX(0%);
         filter: blur(1em);
       }
-      .img_graf:nth-child(2){
+      .img_graf:nth-child(1){
         transform: rotate(0deg) translateX(0%);
         filter: drop-shadow(0 0 15px white); 
       }
@@ -1627,3 +1630,217 @@ body .cursorpack.activo_tres{
     }
   }
 }
+.lightbox{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include flex(column, nowrap, center, center);
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.5);
+  &.activo{
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .contenedor_lightbox{
+    background-color: purple;
+    opacity: 1;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    top: 5vh;
+    @include flex(column, nowrap, center, center);
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255, 0.8));
+    @media (max-width:1800px) {
+      width: 40%;
+    }
+    @media (max-width:1024px) {
+      width: 90%;
+    }
+    @media (max-width:600px) {
+      width: 100%;
+      top: 0vh;
+    }
+    .imagen{
+      overflow: hidden;
+      height: 100%;
+      background-color: yellow;
+      transform: scale(1.2);
+      .grande{
+        height: 100%;
+      }
+    }
+    .flechas{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      @include flex(row, nowrap, space-between, center);
+      font-size: 2.5em;
+      .flizquierda{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 33%, rgba(0,0,0,0.7) 100%);
+        height: 100%;
+        width: 5%;
+        transform: rotate(180deg);
+        transition: .5s;
+        @include flex(row, nowrap, center, center);
+        &:hover{
+          font-size: 1.2em;
+        }
+        @media (max-width: 600px) {
+         width: 10%;
+         font-size: 3em; 
+        }
+      }
+      .flderecha{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 33%, rgba(0,0,0,0.7) 100%);
+        height: 100%;
+        width: 5%;
+        @include flex(row, nowrap, center, center);
+        transition: .5s;
+        &:hover{
+          font-size: 1.2em;
+        }
+        @media (max-width: 600px) {
+          width: 10%;
+          font-size: 3em;
+          &:hover{
+            font-size: 3em;
+          }
+        }
+      }
+    }
+    .button{
+      position: absolute;
+      top: -5vh;
+      font-size: 3em;
+      transform: rotate(45deg) scale(1);
+      transition: .5s;
+      &:hover{
+        transform: rotate(225deg) scale(1.5);
+      }
+      @media (max-width:1024px) {
+        font-size: 8em;
+        top: -8vh;
+      }
+    }
+  }
+}
+// .delante{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: all .5s ease;
+//   transform: scale(0.6) translateY(-120vh);
+//   z-index: 2;
+//   @include flex( column, nowrap, center, center);
+//   &.activo{
+//       transform: scale(1) translateY(0vh);
+//       opacity: 1;
+//       pointer-events: inherit;
+//       .grande{
+//           box-shadow: 0 0 5em rgb(0, 0, 0);
+//           opacity: 1;
+//       }
+//   }
+//   .button{
+//       font-size: 3em;
+//       text-align: center;
+//       width: 1.2em;
+//       color: white;
+//       // background-color: fuchsia;
+//       transform-origin: center;
+//       transform: rotateZ(45deg) scale(0.8);
+//       transition: .5s;
+//       cursor: pointer;
+//       position: absolute;
+//       @media (max-width:800px) {
+//           font-size: 4em;;
+//       }
+//       &:hover{
+//           transform: rotateZ(225deg) scale(1.2);
+//           filter: drop-shadow(0 0 .1em rgb(208, 208, 208));
+//       }
+//   }
+//   .grande{
+//       width: 100%;
+//       transition: .5s;
+//       position: absolute;
+//   }
+// }
+// .flechas{
+//   width: 40%;
+//   height: 78vh;
+//   position: absolute;
+//   // background-color: fuchsia;
+//   @include flex (row, nowrap, space-between, center);
+//   @media (max-width:1900px) {
+//       width: 45%;
+//   }
+//   @media (max-width:1200px) {
+//       width: 80%;
+//       bottom: 45vh;
+//   }
+//   @media (max-width:800px) {
+//       position: static;
+//       width: 40%;
+//       margin-top: 5%;
+//   }
+//   .flizquierda{
+//       width: 4em;
+//       height: 100%;
+//       backgroun-color: red;
+//       @include flex (row, nowrap, center, center);
+//       cursor: pointer;
+//       transition: .3s;
+//       transform: rotate(180deg) scale(1);  
+//       .fas{
+//         height: 100%;
+//       }
+//       &:hover{
+//           transform: rotate(180deg) scale(1.2) translateX(0.2em);
+//           .fas{
+//               filter: drop-shadow(0 0 .1em rgb(208, 208, 208));
+//           }
+//       }
+//   }
+//   .flderecha{
+//       width: 4em;
+//       height: 100%;
+//       background-color: red;
+//       @include flex (row, nowrap, center, center);
+//       transform: scale(1);
+//       cursor: pointer;
+//       transition: .3s;
+//       &:hover{    
+//           transform: scale(1.2) translateX(0.2em);
+//           .fas{
+//               filter: drop-shadow(0 0 .1em rgb(208, 208, 208));
+//           }
+//       }
+//   }
+//   .fas{
+//       font-size: 2.5em;
+//       color: white;
+//       transition: .3s;
+//       @media (max-width:1500px) {
+//           font-size: 2em;
+//       }
+//       @media (max-width:800px) {
+//           font-size: 3em;
+//       }
+//   }
+// }

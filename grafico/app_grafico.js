@@ -31,7 +31,12 @@ const trabajo   = body.querySelectorAll('.trabajo')
     const muestra   = body.querySelectorAll('.muestra')
 
 const img_graf  = body.querySelectorAll('.img_graf')
-
+const img           = document.querySelectorAll('.img')
+const lightbox    = document.querySelector('.lightbox')
+const grande        = document.querySelector('.grande')
+const button        = document.querySelector('.button')
+const izquierda     = document.querySelector('.flizquierda')
+const derecha       = document.querySelector('.flderecha')
 
 
 // Deteccion navegador
@@ -91,8 +96,14 @@ rs.forEach((v,i)=>{
     rs[i].addEventListener('mouseover', cursorintres)
     rs[i].addEventListener('mouseout', cursorouttres)
 })
+izquierda.addEventListener('mouseover', cursorintres)
+izquierda.addEventListener('mouseout', cursorouttres)
 
-    
+derecha.addEventListener('mouseover', cursorintres)
+derecha.addEventListener('mouseout', cursorouttres)
+
+button.addEventListener('mouseover', cursorintres)
+button.addEventListener('mouseout', cursorouttres)
 // MENU RESPONSIVE
 
 burguer.addEventListener('click', () => {
@@ -255,3 +266,45 @@ efectoScrollColor(muestrario, 1.7, 'gris')
 
 // Efecto mover imagen
 
+// Lightbox
+
+
+let foto            = 0
+let cerrar          = ()=>{
+    lightbox.classList.remove('activo')
+}
+let cambiarSource   = ()=>{
+    grande.src = img[foto].src
+}
+// LIGHTBOX
+img.forEach((v,i)=>{
+    img[i].addEventListener('mouseover',()=>{
+        overlay[i].classList.add('opacity')
+    })
+    img[i].addEventListener('mouseout',()=>{
+        overlay[i].classList.remove('opacity')
+    })
+    img[i].addEventListener('click', ()=>{
+        foto = i
+        lightbox.classList.add('activo')
+        cambiarSource()
+    })
+})
+button.addEventListener('click', cerrar)
+
+
+// FLECHAS
+
+derecha.addEventListener('click', ()=>{
+    foto++
+    if(foto>=img.length){foto=0}
+    cambiarSource()
+    console.log(foto)    
+})
+
+izquierda.addEventListener('click', ()=>{
+    foto--
+    if(foto<0){foto=img.length - 1}
+    cambiarSource()
+    console.log(foto)
+})
