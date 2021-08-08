@@ -39,7 +39,8 @@ const muestrario= body.querySelector('.muestrario')
     const h4_mues   = muestrario.querySelector('.h4_mues')
     const rama      = muestrario.querySelectorAll('.mues')
 
-
+const cookies       = body.querySelector('.cookies')
+const cerrar_cookies= body.querySelector('.cerrar_cookies')
 // Deteccion navegador
 
 let cual = navigator.userAgent.toLowerCase()
@@ -279,3 +280,8 @@ rama.forEach((v,i)=>{
 efectoScrollColor(me, 1.5, 'orange')
 efectoScrollColor(skills, 1.5, 'turquesa')
 efectoScrollColor(muestrario, 1.7, 'gris')
+
+// cookies
+cerrar_cookies.addEventListener('click', ()=>{
+    cookies.classList.add('esconder')
+})

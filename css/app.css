@@ -3288,3 +3288,77 @@ body .cursorpack.activo_tres .fancy {
     font-size: 10em;
   }
 }
+
+.cookies {
+  width: 100%;
+  padding: 5vh 0;
+  background-color: rgba(141, 141, 141, 0.5);
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+@media (max-width: 1600px) {
+  .cookies {
+    font-size: 75%;
+  }
+}
+@media (max-width: 1024px) {
+  .cookies {
+    font-size: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .cookies {
+    font-size: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .cookies {
+    font-size: 90%;
+  }
+}
+.cookies.esconder {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.cookies .h5_cookies {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.cookies .p_cookies {
+  font-size: 0.9em;
+}
+.cookies .p_cookies:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .cookies .p_cookies {
+    width: 80%;
+    text-align: center;
+  }
+}
+.cookies .cerrar_cookies {
+  position: absolute;
+  right: 1em;
+  top: 5%;
+  font-size: 2em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: none;
+}

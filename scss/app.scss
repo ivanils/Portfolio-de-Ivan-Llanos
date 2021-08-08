@@ -1951,3 +1951,51 @@ body .cursorpack.activo_tres{
     }
   }
 }
+// COOKIES
+.cookies{
+  width: 100%;
+  padding: 5vh 0;
+  background-color: rgba(141, 141, 141, 0.5);
+  position: fixed;
+  bottom: 0;
+  @include flex(column, nowrap, center, center);
+  transform: translateY(0%);
+  transition: 1s;
+  @media (max-width:1600px) {
+   font-size: 75%;
+  }
+  @media (max-width: 1024px) {
+    font-size: 90%;
+  }
+  @media (max-width: 800px) {
+    font-size: 70%;
+  }
+  @media (max-width:600px) {
+    font-size: 90%;
+    }
+  &.esconder{
+    transform: translateY(100%);
+  }
+  .h5_cookies{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  .p_cookies{
+    font-size: 0.9em;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+    @media (max-width: 1024px) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .cerrar_cookies{
+    position: absolute;
+    right: 1em;
+    top: 5%;
+    font-size: 2em;
+    transform: rotate(45deg);
+    cursor: none;
+  }
+}
