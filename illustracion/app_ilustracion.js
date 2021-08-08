@@ -11,6 +11,7 @@ const ventana   = body.querySelector('.ventana')
     const ven_grafico   = ventana.querySelector('.ven_grafico')
     const equis         = ventana.querySelectorAll('.equis')
     const burguer       = ventana.querySelector('.burguer')
+    const logo_res       = ventana.querySelector('.logo_res')
     const menu          = ventana.querySelector('.menu_responsive')
     const secciones     = ventana.querySelectorAll('.li_responsive')
 
@@ -39,7 +40,7 @@ const izquierda     = document.querySelector('.flizquierda')
 const derecha       = document.querySelector('.flderecha')
 const overlay       = document.querySelector('.overlay')
 
-
+const m_illust      = body.querySelectorAll('.m_illust')
 // Deteccion navegador
 
 let cual = navigator.userAgent.toLowerCase()
@@ -164,16 +165,17 @@ secciones.forEach((v,i)=>{
             if (antes < ahora){
                 header.classList.add('esconder')
                 burguer.classList.add('esconder')
+                logo_res.classList.add('esconder')
             }else{
                 header.classList.remove('esconder')
                 burguer.classList.remove('esconder')
+                logo_res.classList.remove('esconder')
             }
 
             if( ahora <= 0 ){ antes = 0}
             else{ antes = ahora}
 
-            // console.log(antes) 
-            // console.log(ahora) 
+            if(lightbox.classList.contains('activo')){header.classList.add('esconder')}
     })
 
 // Efectos de SCROLL
@@ -239,9 +241,14 @@ rama.forEach((v,i)=>{
     rama[i].addEventListener('mouseover', cursorin)
     rama[i].addEventListener('mouseout', cursorout)
 })
-trabajo.forEach((v,i)=>{
-    efectoScroll(trabajo[i], 1.2)
+m_illust.forEach((v,i)=>{
+    efectoScroll(m_illust[i], 1.2)
+    m_illust[i].addEventListener('mouseover', cursorin)
+    m_illust[i].addEventListener('mouseout', cursorout)
 })
+
+
+
 muestra.forEach((v,i)=>{
     efectoScroll(muestra[i], 1.5)
     muestra[i].addEventListener('mouseover', cursorin)

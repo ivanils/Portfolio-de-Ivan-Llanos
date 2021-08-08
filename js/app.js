@@ -13,6 +13,7 @@ const ventana   = body.querySelector('.ventana')
     const burguer       = ventana.querySelector('.burguer')
     const menu          = ventana.querySelector('.menu_responsive')
     const secciones     = ventana.querySelectorAll('.li_responsive')
+    const logo_res      = ventana.querySelector('.logo_res')
 
 const header    = body.querySelector('.header')
 
@@ -182,9 +183,11 @@ secciones.forEach((v,i)=>{
             if (antes < ahora){
                 header.classList.add('esconder')
                 burguer.classList.add('esconder')
+                logo_res.classList.add('esconder')
             }else{
                 header.classList.remove('esconder')
                 burguer.classList.remove('esconder')
+                logo_res.classList.remove('esconder')
             }
 
             if( ahora <= 0 ){ antes = 0}
