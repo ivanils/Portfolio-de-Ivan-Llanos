@@ -2777,12 +2777,11 @@ body .cursorpack.activo_tres .fancy {
 .lightbox {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   opacity: 1;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2800,6 +2799,10 @@ body .cursorpack.activo_tres .fancy {
   opacity: 0;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+  -webkit-transition: opacity 1s ease, background-color 1s ease 0.5s, -webkit-transform 1s ease;
+  transition: opacity 1s ease, background-color 1s ease 0.5s, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, background-color 1s ease 0.5s;
+  transition: opacity 1s ease, transform 1s ease, background-color 1s ease 0.5s, -webkit-transform 1s ease;
 }
 .lightbox.activo {
   pointer-events: auto;
@@ -2879,10 +2882,13 @@ body .cursorpack.activo_tres .fancy {
   -webkit-transition: 1s;
   transition: 1s;
 }
-@media (max-width: 1024px) {
-  .lightbox .contenedor_lightbox .flechas.opacity {
-    opacity: 0;
-    pointer-events: none;
+@media (max-width: 600px) {
+  .lightbox .contenedor_lightbox .flechas {
+    height: auto;
+    width: 80%;
+    left: auto;
+    top: auto;
+    bottom: -10vh;
   }
 }
 .lightbox .contenedor_lightbox .flechas .flizquierda {
@@ -2916,6 +2922,14 @@ body .cursorpack.activo_tres .fancy {
   .lightbox .contenedor_lightbox .flechas .flizquierda {
     width: 10%;
     font-size: 3em;
+    background: none;
+    opacity: 0.5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .lightbox .contenedor_lightbox .flechas .flizquierda:hover {
+    font-size: 3em;
+    opacity: 1;
   }
 }
 .lightbox .contenedor_lightbox .flechas .flderecha {
@@ -2947,9 +2961,14 @@ body .cursorpack.activo_tres .fancy {
   .lightbox .contenedor_lightbox .flechas .flderecha {
     width: 10%;
     font-size: 3em;
+    background: none;
+    opacity: 0.5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .lightbox .contenedor_lightbox .flechas .flderecha:hover {
     font-size: 3em;
+    opacity: 1;
   }
 }
 .lightbox .contenedor_lightbox .button {
@@ -2970,4 +2989,25 @@ body .cursorpack.activo_tres .fancy {
     font-size: 8em;
     top: -8vh;
   }
+}
+@media (max-width: 600px) {
+  .lightbox .contenedor_lightbox .button {
+    font-size: 10em;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.overlay.activo {
+  background-color: rgba(0, 0, 0, 0.8);
 }

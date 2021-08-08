@@ -37,8 +37,7 @@ const grande        = document.querySelector('.grande')
 const button        = document.querySelector('.button')
 const izquierda     = document.querySelector('.flizquierda')
 const derecha       = document.querySelector('.flderecha')
-const contenedor_lightbox= document.querySelector('.contenedor_lightbox')
-const flechas       = document.querySelector('.flechas')
+const overlay       = document.querySelector('.overlay')
 
 
 // Deteccion navegador
@@ -274,6 +273,7 @@ efectoScrollColor(muestrario, 1.7, 'gris')
 let foto            = 0
 let cerrar          = ()=>{
     lightbox.classList.remove('activo')
+    overlay.classList.remove('activo')
 }
 let cambiarSource   = ()=>{
     grande.src = img[foto].src
@@ -283,15 +283,12 @@ img.forEach((v,i)=>{
     img[i].addEventListener('click', ()=>{
         foto = i
         lightbox.classList.add('activo')
+        overlay.classList.add('activo')
         cambiarSource()
     })
 })
 button.addEventListener('click', cerrar)
-contenedor_lightbox.addEventListener('click', ()=>{
-    flechas.classList.toggle('opacity')
-})
 // FLECHAS
-
 derecha.addEventListener('click', ()=>{
     foto++
     if(foto>=img.length){foto=0}
