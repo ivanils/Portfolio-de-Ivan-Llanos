@@ -2876,6 +2876,13 @@ body .cursorpack.activo_tres .fancy {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.5em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+@media (max-width: 1024px) {
+  .lightbox .contenedor_lightbox .flechas.opacity {
+    opacity: 0;
+  }
 }
 .lightbox .contenedor_lightbox .flechas .flizquierda {
   background: white;

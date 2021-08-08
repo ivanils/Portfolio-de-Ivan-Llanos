@@ -1684,6 +1684,12 @@ body .cursorpack.activo_tres{
       width: 100%;
       @include flex(row, nowrap, space-between, center);
       font-size: 2.5em;
+      transition: 1s;
+      &.opacity{
+        @media (max-width:1024px) {
+          opacity: 0;
+        }
+      }
       .flizquierda{
         background: rgb(255,255,255);
         background: linear-gradient(90deg, rgba(255,255,255,0) 33%, rgba(0,0,0,0.7) 100%);

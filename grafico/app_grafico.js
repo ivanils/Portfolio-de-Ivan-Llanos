@@ -37,6 +37,8 @@ const grande        = document.querySelector('.grande')
 const button        = document.querySelector('.button')
 const izquierda     = document.querySelector('.flizquierda')
 const derecha       = document.querySelector('.flderecha')
+const contenedor_lightbox= document.querySelector('.contenedor_lightbox')
+const flechas       = document.querySelector('.flechas')
 
 
 // Deteccion navegador
@@ -278,12 +280,6 @@ let cambiarSource   = ()=>{
 }
 // LIGHTBOX
 img.forEach((v,i)=>{
-    img[i].addEventListener('mouseover',()=>{
-        overlay[i].classList.add('opacity')
-    })
-    img[i].addEventListener('mouseout',()=>{
-        overlay[i].classList.remove('opacity')
-    })
     img[i].addEventListener('click', ()=>{
         foto = i
         lightbox.classList.add('activo')
@@ -291,8 +287,9 @@ img.forEach((v,i)=>{
     })
 })
 button.addEventListener('click', cerrar)
-
-
+contenedor_lightbox.addEventListener('click', ()=>{
+    flechas.classList.toggle('opacity')
+})
 // FLECHAS
 
 derecha.addEventListener('click', ()=>{
