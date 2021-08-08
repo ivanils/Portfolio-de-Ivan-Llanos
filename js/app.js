@@ -283,5 +283,5 @@ efectoScrollColor(muestrario, 1.7, 'gris')
 
 // cookies
 cerrar_cookies.addEventListener('click', ()=>{
-    cookies.classList.add('esconder')
+    cookies.classList.remove('aparecer')
 })

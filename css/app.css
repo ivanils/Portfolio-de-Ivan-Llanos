@@ -3291,6 +3291,7 @@ body .cursorpack.activo_tres .fancy {
 
 .cookies {
   width: 100%;
+  max-width: var(--grande);
   padding: 5vh 0;
   background-color: rgba(141, 141, 141, 0.5);
   position: fixed;
@@ -3308,8 +3309,8 @@ body .cursorpack.activo_tres .fancy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -3333,9 +3334,9 @@ body .cursorpack.activo_tres .fancy {
     font-size: 90%;
   }
 }
-.cookies.esconder {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+.cookies.aparecer {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 .cookies .h5_cookies {
   margin-bottom: 10px;
@@ -3357,7 +3358,7 @@ body .cursorpack.activo_tres .fancy {
   position: absolute;
   right: 1em;
   top: 5%;
-  font-size: 2em;
+  font-size: 3em;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   cursor: none;

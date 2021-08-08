@@ -1954,12 +1954,13 @@ body .cursorpack.activo_tres{
 // COOKIES
 .cookies{
   width: 100%;
+  max-width: var(--grande);
   padding: 5vh 0;
   background-color: rgba(141, 141, 141, 0.5);
   position: fixed;
   bottom: 0;
   @include flex(column, nowrap, center, center);
-  transform: translateY(0%);
+  transform: translateY(100%);
   transition: 1s;
   @media (max-width:1600px) {
    font-size: 75%;
@@ -1972,9 +1973,9 @@ body .cursorpack.activo_tres{
   }
   @media (max-width:600px) {
     font-size: 90%;
-    }
-  &.esconder{
-    transform: translateY(100%);
+  }
+  &.aparecer{
+    transform: translateY(0%);
   }
   .h5_cookies{
     margin-bottom: 10px;
@@ -1994,7 +1995,7 @@ body .cursorpack.activo_tres{
     position: absolute;
     right: 1em;
     top: 5%;
-    font-size: 2em;
+    font-size: 3em;
     transform: rotate(45deg);
     cursor: none;
   }
