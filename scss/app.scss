@@ -1726,19 +1726,6 @@ body .cursorpack.activo_tres{
       width: 100%;
       @include flex( row, wrap, space-between, space-between);
     }
-    .p_coming{
-      font-size: 2.5em;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-bottom: 10vh;
-      @include flex(row, nowrap, center, center);
-      @media (max-width: 1024px) {
-        font-size: 4em;
-      }
-      @media (max-width: 800px) {
-        font-size: 3em;
-      }
-    }
   }
 }
 .m_illust{

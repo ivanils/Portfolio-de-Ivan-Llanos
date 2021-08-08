@@ -2935,35 +2935,6 @@ body .cursorpack.activo_tres .fancy {
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
-.escaparate_ilustracion .t_ilustracion .p_coming {
-  font-size: 2.5em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media (max-width: 1024px) {
-  .escaparate_ilustracion .t_ilustracion .p_coming {
-    font-size: 4em;
-  }
-}
-@media (max-width: 800px) {
-  .escaparate_ilustracion .t_ilustracion .p_coming {
-    font-size: 3em;
-  }
-}
 
 .m_illust {
   width: 22%;
