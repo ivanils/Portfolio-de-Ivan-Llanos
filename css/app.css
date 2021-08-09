@@ -1714,7 +1714,7 @@ body .cursorpack.activo_tres .fancy {
 @media (min-width: 600px) and (min-height: 1000px) {
   .muestrario .web .blur {
     background-size: 250%;
-    background-position: center 0%;
+    background-position: center -200%;
   }
 }
 @media (max-width: 1024px) {
