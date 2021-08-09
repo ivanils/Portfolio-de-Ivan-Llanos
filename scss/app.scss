@@ -24,6 +24,9 @@ body{
     @media (max-width: 1024px) {
       display: none;
     }
+    @media (max-width: 1400px) and (orientation: landscape){
+      display: none;
+    }
     &.activo{
       & .cursor{
         width: 20px;
