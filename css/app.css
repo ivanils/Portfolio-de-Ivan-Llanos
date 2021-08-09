@@ -2819,17 +2819,6 @@ body .cursorpack.activo_tres .fancy {
   -webkit-filter: drop-shadow(0 0 15px white);
           filter: drop-shadow(0 0 15px white);
 }
-.escaparate_grafico .p_coming {
-  font-size: 2.5em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 10vh;
-}
-@media (max-width: 1024px) {
-  .escaparate_grafico .p_coming {
-    font-size: 4em;
-  }
-}
 
 .overlay {
   width: 100%;
