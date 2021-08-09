@@ -3058,6 +3058,12 @@ body .cursorpack.activo_tres .fancy {
   max-width: 1100px;
   width: 100%;
 }
+@media (max-width: 1400px) and (orientation: landscape) {
+  .lightbox .contenedor_lightbox.grafico {
+    width: 65%;
+    max-width: 1400px;
+  }
+}
 .lightbox .contenedor_lightbox.ilustracion {
   max-width: 35%;
   top: 0vh;
@@ -3091,6 +3097,11 @@ body .cursorpack.activo_tres .fancy {
   .lightbox .contenedor_lightbox {
     width: 100%;
     top: 0vh;
+  }
+}
+@media (max-width: 1400px) and (orientation: landscape) {
+  .lightbox .contenedor_lightbox {
+    width: 50%;
   }
 }
 .lightbox .contenedor_lightbox .imagen {
