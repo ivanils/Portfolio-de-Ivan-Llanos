@@ -1714,7 +1714,7 @@ body .cursorpack.activo_tres .fancy {
 @media (min-height: 900px) {
   .muestrario .web .blur {
     background-size: 250%;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
   }
 }
 @media (max-width: 1024px) {
@@ -1801,7 +1801,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (min-height: 900px) {
   .muestrario .ilustracion .blur {
-    background-position: 50% 250%;
+    background-position: 50% 100%;
   }
 }
 @media (max-width: 600px) {
