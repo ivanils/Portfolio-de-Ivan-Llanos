@@ -1907,7 +1907,7 @@ body .cursorpack.activo_tres .fancy {
     margin: 40vh 0 35vh 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .escaparate_web .h3_web {
     width: 90%;
   }
