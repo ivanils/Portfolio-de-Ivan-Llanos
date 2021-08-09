@@ -1086,6 +1086,9 @@ body .cursorpack.activo_tres{
       text-align: center;
       margin: 40vh 0 35vh 0;      
     }
+    @media (max-width:800px) {
+      width: 90%;
+    }
     & .span_web{
       -webkit-text-stroke: 3px white;
       color: transparent; 
