@@ -956,7 +956,7 @@ body .cursorpack.activo_tres{
         filter: blur(2em);
         background-size: 200%; 
       }
-      @media (min-width: 600px) and (min-height:1000px) {
+      @media (min-height:900px) {
         background-size: 250%;
         background-position: 50% 50%;
       }
@@ -991,7 +991,7 @@ body .cursorpack.activo_tres{
         background-position: bottom;
         filter: blur(1em);
       }
-      @media (min-width: 600px) and (min-height:1000px) {
+      @media (min-height:900px) {
         background-size: 200%;
       }
       @media (max-width: 600px) {
@@ -1030,7 +1030,7 @@ body .cursorpack.activo_tres{
         filter: blur(1em);
         background-color: rgba(0, 0, 0, 0);
       }
-      @media (min-width: 600px) and (min-height:1000px) {
+      @media (min-height:900px) {
         background-position: 50% 250%;
       }
       @media (max-width: 600px) {

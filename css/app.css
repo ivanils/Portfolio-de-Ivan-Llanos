@@ -1711,7 +1711,7 @@ body .cursorpack.activo_tres .fancy {
     background-size: 200%;
   }
 }
-@media (min-width: 600px) and (min-height: 1000px) {
+@media (min-height: 900px) {
   .muestrario .web .blur {
     background-size: 250%;
     background-position: 50% 50%;
@@ -1752,7 +1752,7 @@ body .cursorpack.activo_tres .fancy {
             filter: blur(1em);
   }
 }
-@media (min-width: 600px) and (min-height: 1000px) {
+@media (min-height: 900px) {
   .muestrario .grafico .blur {
     background-size: 200%;
   }
@@ -1799,7 +1799,7 @@ body .cursorpack.activo_tres .fancy {
     background-color: rgba(0, 0, 0, 0);
   }
 }
-@media (min-width: 600px) and (min-height: 1000px) {
+@media (min-height: 900px) {
   .muestrario .ilustracion .blur {
     background-position: 50% 250%;
   }
