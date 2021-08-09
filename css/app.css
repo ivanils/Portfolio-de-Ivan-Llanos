@@ -1706,14 +1706,14 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 1024px) {
   .muestrario .web .blur {
-    background-size: 150%;
     -webkit-filter: blur(2em);
             filter: blur(2em);
+    background-size: 200%;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 600px) and (min-height: 1000px) {
   .muestrario .web .blur {
-    background-size: 200%;
+    background-size: 250%;
   }
 }
 @media (max-width: 1024px) {
@@ -1751,6 +1751,11 @@ body .cursorpack.activo_tres .fancy {
             filter: blur(1em);
   }
 }
+@media (min-width: 800px) and (min-height: 1000px) {
+  .muestrario .grafico .blur {
+    background-size: 200%;
+  }
+}
 @media (max-width: 600px) {
   .muestrario .grafico .blur {
     background-size: 250%;
@@ -1779,7 +1784,7 @@ body .cursorpack.activo_tres .fancy {
   z-index: -1;
   -webkit-transition: 1s ease;
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url(../assets/Ilustraciones/portraits/background.jpg);
+  background-image: url(../assets/backgroundIllus.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1791,6 +1796,11 @@ body .cursorpack.activo_tres .fancy {
     -webkit-filter: blur(1em);
             filter: blur(1em);
     background-color: rgba(0, 0, 0, 0);
+  }
+}
+@media (min-width: 800px) and (min-height: 1000px) {
+  .muestrario .ilustracion .blur {
+    background-position: center 100%;
   }
 }
 @media (max-width: 600px) {

@@ -953,11 +953,11 @@ body .cursorpack.activo_tres{
       background-attachment: fixed;
       background-position: center 50%;
       @media (max-width: 1024px) {
-        background-size: 150%; 
         filter: blur(2em);
-      }
-      @media (max-width: 1024px) {
         background-size: 200%; 
+      }
+      @media (min-width: 600px) and (min-height:1000px) {
+        background-size: 250%;
       }
     }
     &:hover .blur{
@@ -990,6 +990,9 @@ body .cursorpack.activo_tres{
         background-position: bottom;
         filter: blur(1em);
       }
+      @media (min-width: 800px) and (min-height:1000px) {
+        background-size: 200%;
+      }
       @media (max-width: 600px) {
         background-size: 250%; 
         background-position: center;
@@ -1016,7 +1019,7 @@ body .cursorpack.activo_tres{
       z-index: -1;
       -webkit-transition: 1s ease;
       background-color: rgba(0, 0, 0, 0.3);
-      background-image: url(../assets/Ilustraciones/portraits/background.jpg);
+      background-image: url(../assets/backgroundIllus.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -1025,6 +1028,9 @@ body .cursorpack.activo_tres{
         background-position: center 260%;
         filter: blur(1em);
         background-color: rgba(0, 0, 0, 0);
+      }
+      @media (min-width: 800px) and (min-height:1000px) {
+        background-position: center 100%;
       }
       @media (max-width: 600px) {
         background-position: center 100%;
