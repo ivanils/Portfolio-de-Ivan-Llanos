@@ -846,15 +846,17 @@ body .cursorpack.activo_tres{
     position: relative;
     overflow: hidden;
     transition: 1s ease;
-    // opacity: 0;
-    // pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
     @include flex( column, nowrap, center, center);
     @media (max-width: 1024px) {
       min-height: 40vh; 
+      opacity: 1;
+      pointer-events: auto;
     }
     &.entrar{
-      // opacity: 1;
-      // pointer-events: auto;
+      opacity: 1;
+      pointer-events: auto;
     }
     
     .cont_graf{

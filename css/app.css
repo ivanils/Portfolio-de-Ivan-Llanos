@@ -1536,6 +1536,8 @@ body .cursorpack.activo_tres .fancy {
   overflow: hidden;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+  opacity: 0;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1553,7 +1555,13 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1024px) {
   .muestrario .web, .muestrario .grafico, .muestrario .ilustracion {
     min-height: 40vh;
+    opacity: 1;
+    pointer-events: auto;
   }
+}
+.muestrario .web.entrar, .muestrario .grafico.entrar, .muestrario .ilustracion.entrar {
+  opacity: 1;
+  pointer-events: auto;
 }
 .muestrario .web .cont_graf, .muestrario .grafico .cont_graf, .muestrario .ilustracion .cont_graf {
   -webkit-transition: all 0.8s cubic-bezier(0.56, 0.16, 1, 0.76);
