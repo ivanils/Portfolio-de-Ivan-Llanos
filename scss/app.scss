@@ -852,10 +852,10 @@ body .cursorpack.activo_tres{
     @media (max-width: 1024px) {
       min-height: 40vh; 
     }
-    &.entrar{
-      // opacity: 1;
-      // pointer-events: auto;
-    }
+    // &.entrar{
+    //   opacity: 1;
+    //   pointer-events: auto;
+    // }
     
     .cont_graf{
       transition: all .8s cubic-bezier(.56,.16,1,.76);
