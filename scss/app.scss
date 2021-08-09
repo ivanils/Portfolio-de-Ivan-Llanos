@@ -846,15 +846,15 @@ body .cursorpack.activo_tres{
     position: relative;
     overflow: hidden;
     transition: 1s ease;
-    opacity: 0;
-    pointer-events: none;
+    // opacity: 0;
+    // pointer-events: none;
     @include flex( column, nowrap, center, center);
     @media (max-width: 1024px) {
       min-height: 40vh; 
     }
     &.entrar{
-      opacity: 1;
-      pointer-events: auto;
+      // opacity: 1;
+      // pointer-events: auto;
     }
     
     .cont_graf{
@@ -957,8 +957,7 @@ body .cursorpack.activo_tres{
         background-size: 200%; 
       }
       @media (min-height:900px) {
-        background-size: 250%;
-        background-position: 50% 0%;
+        background-attachment: initial;
       }
     }
     &:hover .blur{
@@ -993,6 +992,7 @@ body .cursorpack.activo_tres{
       }
       @media (min-height:900px) {
         background-size: 200%;
+        background-attachment: initial;
       }
       @media (max-width: 600px) {
         background-size: 250%; 
@@ -1032,6 +1032,7 @@ body .cursorpack.activo_tres{
       }
       @media (min-height:900px) {
         background-position: 50% 100%;
+        background-attachment: initial;
       }
       @media (max-width: 600px) {
         background-position: center 100%;

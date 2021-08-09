@@ -1536,8 +1536,6 @@ body .cursorpack.activo_tres .fancy {
   overflow: hidden;
   -webkit-transition: 1s ease;
   transition: 1s ease;
-  opacity: 0;
-  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1556,10 +1554,6 @@ body .cursorpack.activo_tres .fancy {
   .muestrario .web, .muestrario .grafico, .muestrario .ilustracion {
     min-height: 40vh;
   }
-}
-.muestrario .web.entrar, .muestrario .grafico.entrar, .muestrario .ilustracion.entrar {
-  opacity: 1;
-  pointer-events: auto;
 }
 .muestrario .web .cont_graf, .muestrario .grafico .cont_graf, .muestrario .ilustracion .cont_graf {
   -webkit-transition: all 0.8s cubic-bezier(0.56, 0.16, 1, 0.76);
@@ -1713,8 +1707,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (min-height: 900px) {
   .muestrario .web .blur {
-    background-size: 250%;
-    background-position: 50% 0%;
+    background-attachment: initial;
   }
 }
 @media (max-width: 1024px) {
@@ -1755,6 +1748,7 @@ body .cursorpack.activo_tres .fancy {
 @media (min-height: 900px) {
   .muestrario .grafico .blur {
     background-size: 200%;
+    background-attachment: initial;
   }
 }
 @media (max-width: 600px) {
@@ -1802,6 +1796,7 @@ body .cursorpack.activo_tres .fancy {
 @media (min-height: 900px) {
   .muestrario .ilustracion .blur {
     background-position: 50% 100%;
+    background-attachment: initial;
   }
 }
 @media (max-width: 600px) {
