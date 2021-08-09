@@ -2401,8 +2401,8 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 1024px) {
   .escaparate_grafico .muestra {
-    width: 60em;
-    min-height: 60em;
+    width: 40em;
+    min-height: 40em;
     margin: 0vh 0 25vh 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2481,7 +2481,6 @@ body .cursorpack.activo_tres .fancy {
           filter: drop-shadow(0 0 0px black);
 }
 .escaparate_grafico .muestra.m_dos {
-  left: -10%;
   bottom: 10vh;
   left: -30%;
   -webkit-transform: rotate(0deg);
@@ -2602,8 +2601,9 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1024px) {
   .escaparate_grafico .m_uno.entrar {
     left: auto;
-    bottom: auto;
-    width: 70%;
+    bottom: 10vh;
+    width: 100%;
+    margin: auto;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transform: scale(1);
@@ -2653,7 +2653,6 @@ body .cursorpack.activo_tres .fancy {
           filter: drop-shadow(0 0 15px white);
 }
 .escaparate_grafico .m_dos.entrar {
-  left: -10%;
   bottom: 10vh;
   left: -30%;
   -webkit-transform: rotate(5deg);

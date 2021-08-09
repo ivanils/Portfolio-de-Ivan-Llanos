@@ -1374,8 +1374,8 @@ body .cursorpack.activo_tres{
     opacity: 0;
     transition: 1s ease;
     @media (max-width: 1024px) {
-      width: 60em;
-      min-height: 60em;
+      width: 40em;
+      min-height: 40em;
       margin: 0vh 0 25vh 0;
       @include flex(column, nowrap, center, center);
     }
@@ -1425,8 +1425,6 @@ body .cursorpack.activo_tres{
       }
     }
     &.m_dos{
-      left: -10%;
-      // background-color: green;
       bottom: 10vh;
       left: -30%;
       transform: rotate(0deg);
@@ -1511,8 +1509,9 @@ body .cursorpack.activo_tres{
     transform: rotate(-5deg);
     @media (max-width: 1024px) {
       left: auto;
-      bottom: auto;
-      width: 70%;
+      bottom: 10vh;
+      width: 100%;
+      margin: auto;
       transform: rotate(0deg);
       transform: scale(1);
     }
@@ -1546,8 +1545,6 @@ body .cursorpack.activo_tres{
     }
   }
   .m_dos.entrar{
-    left: -10%;
-    // background-color: green;
     bottom: 10vh;
     left: -30%;
     transform: rotate(5deg);
