@@ -958,7 +958,7 @@ body .cursorpack.activo_tres{
       }
       @media (min-width: 600px) and (min-height:1000px) {
         background-size: 250%;
-        background-position: center 0%;
+        background-position: 50% 50%;
       }
     }
     &:hover .blur{
@@ -1031,7 +1031,7 @@ body .cursorpack.activo_tres{
         background-color: rgba(0, 0, 0, 0);
       }
       @media (min-width: 600px) and (min-height:1000px) {
-        background-position: center 0%;
+        background-position: 50% 50%;
       }
       @media (max-width: 600px) {
         background-position: center 100%;
