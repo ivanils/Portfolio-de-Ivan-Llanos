@@ -957,8 +957,8 @@ body .cursorpack.activo_tres{
         background-size: 200%; 
       }
       @media (min-height:900px) {
-        background-size: 100%;
-        background-position: initial;
+        background-size: 250%;
+        background-position: 50% 0%;
       }
     }
     &:hover .blur{
@@ -1031,7 +1031,7 @@ body .cursorpack.activo_tres{
         background-color: rgba(0, 0, 0, 0);
       }
       @media (min-height:900px) {
-        background-position: initial;
+        background-position: 50% 100%;
       }
       @media (max-width: 600px) {
         background-position: center 100%;
@@ -1080,7 +1080,7 @@ body .cursorpack.activo_tres{
     font-size: 5em;
     filter: drop-shadow(0 0 5px white);
     text-transform: uppercase;
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       height: auto;
       display: block;
       text-align: center;
@@ -1089,7 +1089,7 @@ body .cursorpack.activo_tres{
     & .span_web{
       -webkit-text-stroke: 3px white;
       color: transparent; 
-      @media (max-width: 800px) {     
+      @media (max-width:1024px) {
         -webkit-text-stroke: 2px white;
         font-size: 130%;
       }
@@ -1114,6 +1114,7 @@ body .cursorpack.activo_tres{
     }
     @media (max-width:1024px) {
       @include flex(column, nowrap, center, center);
+      width: 55%;
     }
     @media (max-width:600px) {
       margin: 5vh 0;
@@ -1305,7 +1306,8 @@ body .cursorpack.activo_tres{
         font-size: 4em;
       }
       @media (max-width: 800px) {
-        font-size: 5em;
+        font-size: 3.5em;
+        border-bottom: 3px solid white;
       }
     }
   }
@@ -1374,8 +1376,8 @@ body .cursorpack.activo_tres{
     opacity: 0;
     transition: 1s ease;
     @media (max-width: 1024px) {
-      width: 40em;
-      min-height: 40em;
+      width: 45em;
+      min-height: 45em;
       margin: 0vh 0 25vh 0;
       @include flex(column, nowrap, center, center);
     }
@@ -1425,6 +1427,8 @@ body .cursorpack.activo_tres{
       }
     }
     &.m_dos{
+      left: -10%;
+      // background-color: green;
       bottom: 10vh;
       left: -30%;
       transform: rotate(0deg);
@@ -1509,9 +1513,8 @@ body .cursorpack.activo_tres{
     transform: rotate(-5deg);
     @media (max-width: 1024px) {
       left: auto;
-      bottom: 10vh;
-      width: 100%;
-      margin: auto;
+      bottom: auto;
+      width: 70%;
       transform: rotate(0deg);
       transform: scale(1);
     }
@@ -1545,6 +1548,8 @@ body .cursorpack.activo_tres{
     }
   }
   .m_dos.entrar{
+    left: -10%;
+    // background-color: green;
     bottom: 10vh;
     left: -30%;
     transform: rotate(5deg);
@@ -1623,7 +1628,7 @@ body .cursorpack.activo_tres{
       }
     }
   }
-  .entrar.m_cuatro.entrar{
+  .m_cuatro.entrar{
     top: 50vh;
     left: -40%;
     transform: rotate(-20deg);
@@ -1654,6 +1659,17 @@ body .cursorpack.activo_tres{
         transform: rotate(0deg) translateX(0%);
         filter: drop-shadow(0 0 15px white); 
       }
+    }
+  }
+  .p_coming{
+    font-size: 2.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10vh;
+    // background-color: lime;
+    @media (max-width: 1024px) {
+      font-size: 2.5em;
+      margin-top: 0vh;
     }
   }
 }
