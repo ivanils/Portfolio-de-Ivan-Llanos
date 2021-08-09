@@ -1026,10 +1026,6 @@ body .cursorpack.activo_tres{
         background-position: 50% 50%;
         background-attachment: initial;
       }
-      @media (max-width: 600px) {
-        filter: blur(1em);
-        background-color: rgba(0, 0, 0, 0);
-      }
     }
     &:hover .blur{
       @media (max-width:1024px) {

@@ -1785,13 +1785,6 @@ body .cursorpack.activo_tres .fancy {
     background-attachment: initial;
   }
 }
-@media (max-width: 600px) {
-  .muestrario .ilustracion .blur {
-    -webkit-filter: blur(1em);
-            filter: blur(1em);
-    background-color: rgba(0, 0, 0, 0);
-  }
-}
 @media (max-width: 1024px) {
   .muestrario .ilustracion:hover .blur {
     background-size: 105%;
