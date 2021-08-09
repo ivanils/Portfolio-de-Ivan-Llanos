@@ -282,11 +282,6 @@ body .cursorpack {
     display: none;
   }
 }
-@media (max-width: 1400px) and (orientation: landscape) {
-  body .cursorpack {
-    display: none;
-  }
-}
 body .cursorpack.activo .cursor {
   width: 20px;
   height: 20px;
