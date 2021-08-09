@@ -958,7 +958,7 @@ body .cursorpack.activo_tres{
       }
       @media (min-height:900px) {
         background-size: 250%;
-        background-position: 50% 0%;
+        background-position: initial;
       }
     }
     &:hover .blur{
@@ -1031,7 +1031,7 @@ body .cursorpack.activo_tres{
         background-color: rgba(0, 0, 0, 0);
       }
       @media (min-height:900px) {
-        background-position: 50% 100%;
+        background-position: initial;
       }
       @media (max-width: 600px) {
         background-position: center 100%;
@@ -1080,7 +1080,7 @@ body .cursorpack.activo_tres{
     font-size: 5em;
     filter: drop-shadow(0 0 5px white);
     text-transform: uppercase;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       height: auto;
       display: block;
       text-align: center;
@@ -1089,6 +1089,10 @@ body .cursorpack.activo_tres{
     & .span_web{
       -webkit-text-stroke: 3px white;
       color: transparent; 
+      @media (max-width: 800px) {     
+        -webkit-text-stroke: 2px white;
+        font-size: 130%;
+      }
       @media (max-width: 600px) {     
         -webkit-text-stroke: 1px white;
         font-size: 160%;
@@ -1299,12 +1303,9 @@ body .cursorpack.activo_tres{
       margin-bottom: 10vh;
       @media (max-width: 1024px) {
         font-size: 4em;
-        border-bottom: 5px solid white;
-        border-radius: 3px;
       }
       @media (max-width: 800px) {
         font-size: 5em;
-        border-bottom: 3px solid white;
       }
     }
   }

@@ -1714,7 +1714,7 @@ body .cursorpack.activo_tres .fancy {
 @media (min-height: 900px) {
   .muestrario .web .blur {
     background-size: 250%;
-    background-position: 50% 0%;
+    background-position: initial;
   }
 }
 @media (max-width: 1024px) {
@@ -1801,7 +1801,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (min-height: 900px) {
   .muestrario .ilustracion .blur {
-    background-position: 50% 100%;
+    background-position: initial;
   }
 }
 @media (max-width: 600px) {
@@ -1899,7 +1899,7 @@ body .cursorpack.activo_tres .fancy {
           filter: drop-shadow(0 0 5px white);
   text-transform: uppercase;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .escaparate_web .h3_web {
     height: auto;
     display: block;
@@ -1910,6 +1910,12 @@ body .cursorpack.activo_tres .fancy {
 .escaparate_web .h3_web .span_web {
   -webkit-text-stroke: 3px white;
   color: transparent;
+}
+@media (max-width: 800px) {
+  .escaparate_web .h3_web .span_web {
+    -webkit-text-stroke: 2px white;
+    font-size: 130%;
+  }
 }
 @media (max-width: 600px) {
   .escaparate_web .h3_web .span_web {
@@ -2264,14 +2270,11 @@ body .cursorpack.activo_tres .fancy {
 @media (max-width: 1024px) {
   .escaparate_web .t_web .p_coming {
     font-size: 4em;
-    border-bottom: 5px solid white;
-    border-radius: 3px;
   }
 }
 @media (max-width: 800px) {
   .escaparate_web .t_web .p_coming {
     font-size: 5em;
-    border-bottom: 3px solid white;
   }
 }
 
