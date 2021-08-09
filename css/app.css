@@ -1795,7 +1795,7 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (min-height: 900px) {
   .muestrario .ilustracion .blur {
-    background-position: 50% 100%;
+    background-position: center 50%;
     background-attachment: initial;
   }
 }
