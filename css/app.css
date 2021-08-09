@@ -1703,10 +1703,6 @@ body .cursorpack.activo_tres .fancy {
     -webkit-filter: blur(2em);
             filter: blur(2em);
     background-size: 200%;
-  }
-}
-@media (min-height: 900px) {
-  .muestrario .web .blur {
     background-attachment: initial;
   }
 }
@@ -1739,14 +1735,9 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 1024px) {
   .muestrario .grafico .blur {
-    background-size: 150%;
     background-position: bottom;
     -webkit-filter: blur(1em);
             filter: blur(1em);
-  }
-}
-@media (min-height: 900px) {
-  .muestrario .grafico .blur {
     background-size: 200%;
     background-attachment: initial;
   }
@@ -1787,21 +1778,15 @@ body .cursorpack.activo_tres .fancy {
 }
 @media (max-width: 1024px) {
   .muestrario .ilustracion .blur {
-    background-position: center 260%;
     -webkit-filter: blur(1em);
             filter: blur(1em);
     background-color: rgba(0, 0, 0, 0);
-  }
-}
-@media (min-height: 900px) {
-  .muestrario .ilustracion .blur {
-    background-position: 50% 100%;
+    background-position: 50% 50%;
     background-attachment: initial;
   }
 }
 @media (max-width: 600px) {
   .muestrario .ilustracion .blur {
-    background-position: center 100%;
     -webkit-filter: blur(1em);
             filter: blur(1em);
     background-color: rgba(0, 0, 0, 0);
