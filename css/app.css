@@ -810,7 +810,7 @@ body .cursorpack.activo_tres .fancy {
   .principal .fondo {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    height: 150%;
+    top: 150px;
   }
 }
 .principal .fondo .uno {
