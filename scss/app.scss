@@ -21,7 +21,7 @@ body{
   .cursorpack{
     position: absolute;
     opacity: 0;
-    @media (max-width: 1024px) {
+    @media (max-width: 750px) {
       display: none;
     }
     &.activo{
@@ -357,6 +357,7 @@ body .cursorpack.activo_tres{
   height: 94vh;
   position: relative;
   overflow: hidden;
+  @include flex(column, nowrap, center, center);
   &.web{
     position: fixed;
     z-index: -10;
@@ -783,9 +784,10 @@ body .cursorpack.activo_tres{
 }
 
 .muestrario{
-  width: 100%;
+  min-width: 100%;
   max-width: var(--grande);
   padding-top: 10%;
+  margin: auto;
   @media (max-width:1800px){
     font-size: 65%;
   }
@@ -797,6 +799,9 @@ body .cursorpack.activo_tres{
   }
   @media (max-width: 350px) {
     font-size: 40%;
+  }
+  a{
+    width: 100%;
   }
   .h4_mues{
     width: 50%;
@@ -837,6 +842,35 @@ body .cursorpack.activo_tres{
           width: 2.8em;
         }
       }
+    }
+  }
+  .ae{
+    max-width: 75%;
+    margin: 0 auto 2rem;
+    @media screen and (max-width:750px) {
+      max-width: 95%;
+      margin: 0 auto .5rem;
+    }
+    .h5_aec4d{
+      width: auto;
+      margin: 0 auto 1rem;
+      font-size: 1.75rem;
+      text-align: center;
+      text-align: center;
+      -webkit-text-stroke: 3px white;
+      color: transparent;
+      @media (max-width: 1800px) {
+        -webkit-text-stroke: 1px white;
+      }
+      @media (max-width: 1024px) {
+        filter: drop-shadow(0 0 5px darkgray);
+        margin-bottom: .5em;
+      }
+    }
+    .ae_box{
+      margin: auto;
+      border-radius: .5rem;
+      overflow: hidden;
     }
   }
   .web, .grafico, .ilustracion{
@@ -1047,6 +1081,7 @@ body .cursorpack.activo_tres{
 // WEB section
 
 .escaparate_web{
+  margin: auto;
   width: 100%;
   max-width: 2600px;
   @include flex( column, nowrap, center, center);
@@ -1112,9 +1147,10 @@ body .cursorpack.activo_tres{
       width: 85%;
     }
     &:nth-child(even){
+      // background-color: turquoise;
+      // width: 90%;
       .trabajo_izqda{
         flex: 2;
-        // background-color: turquoise;
         @include flex( column, nowrap, center,center);
         .a_t_web{
           &:hover{
@@ -1147,20 +1183,33 @@ body .cursorpack.activo_tres{
           @include flex(column, nowrap, center, center);
           .h4_web{
             font-size: 10em;
-            padding: 1.5em 0;
-            // background-color: yellow;
+            padding: 1rem 0 0;
+            @media (max-width:1024px) {
+              padding: 2rem 0 0;
+            }
           }
-          .fa-github{
+          .icons{
+            width: 100%;
+            @include flex(row, nowrap, center, center);
+          }
+          .fab{
             // background-color: red;
             transition: 1s;
-            transform: translateY(100%);
-            opacity: 0;
+            // transform: translateY(100%);
+            // opacity: 0;
             font-size: 5em;
-            position: absolute;
+            // position: absolute;
             bottom: 20%;
+            margin-right: 1rem;
             @media (max-width:1024px) {
               transform: translateY(0%);
               opacity: 1;
+            }
+            &.suite{
+              max-width: 45px;
+              @media (max-width:1024px) {
+                max-width: 25px;
+              }
             }
           }
           &:hover{
@@ -1180,7 +1229,7 @@ body .cursorpack.activo_tres{
       &.entrar{
         opacity: 1;
         .a_t_web img{
-          transform: rotate(-10deg);
+          transform: rotate(0deg);
           @media (max-width:1024px) {
             transform: rotate(0deg);
             filter: drop-shadow(0 0 10px white);
@@ -1306,6 +1355,7 @@ body .cursorpack.activo_tres{
 
 //Sección Gráfico 
 .escaparate_grafico{
+  margin: auto;
   width: 100%;
   max-width: 2600px;
   @include flex( column, nowrap, center, center);
@@ -1682,6 +1732,7 @@ body .cursorpack.activo_tres{
 }
 // Ilustración
 .escaparate_ilustracion{
+  margin: auto;
   width: 100%;
   max-width: 2600px;
   @include flex( column, nowrap, center, center);
@@ -1735,7 +1786,13 @@ body .cursorpack.activo_tres{
   border-radius: 1em;
   margin-bottom: 4%;
   transition: 1s ease;
+  overflow: hidden;
   opacity: 0;
+  filter: drop-shadow(0 0 0px transparent);
+  transition: .5s ease all;
+  &:hover{
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.489));
+  }
   &:not(:nth-child(4n)){
     margin-right: calc(12%/3);
   }
@@ -1805,11 +1862,12 @@ body .cursorpack.activo_tres{
     opacity: 1;
     position: relative;
     top: 5vh;
+    overflow: hidden;
+    border-radius: .5rem;
     @include flex(column, nowrap, center, center);
     filter: drop-shadow(0 0 10px rgb(255, 255, 255, 0.8));
     &.grafico{
       max-width: 1100px;
-      width: 100%;
       @media (max-width: 1400px) and (orientation: landscape){
         width: 65%;
         max-width: 1400px;
@@ -1825,7 +1883,7 @@ body .cursorpack.activo_tres{
         max-width: 80%;
       }
       @media (max-width:600px) {
-        max-width: 100%;
+        max-width: 90%;
       }
     }
     @media (max-width:1800px) {
@@ -1861,10 +1919,10 @@ body .cursorpack.activo_tres{
       transition: 1s;
       @media (max-width: 600px) {
         height: auto;
-        width: 80%;
+        width: 99%;
         left: auto;
         top: auto;
-        bottom: -10vh;
+        // bottom: -10vh;
       }
       .flizquierda{
         background: rgb(255,255,255);
@@ -1914,85 +1972,68 @@ body .cursorpack.activo_tres{
     }
     .button{
       position: absolute;
-      top: -5vh;
-      font-size: 3em;
+      top: 5px;
+      font-size: 2.5rem;
       transform: rotate(45deg) scale(1);
       transition: .5s;
       &.ilustracion{
-        top: 5vh;
-        right: -10%;
-        @media (max-width:1024px) {
-          right: auto;
-          top: -7vh;
-        }
-        @media (max-width:800px) {
-          font-size: 5em;
-          top: -6vh;
-        }
-        @media (max-width:600px) {
-          font-size: 8em;
-          top: -8vh;
-        }
+       margin-block-start: auto;
       }
       &:hover{
         transform: rotate(225deg) scale(1.5);
       }
       @media (max-width:1024px) {
-        font-size: 8em;
-        top: -8vh;
-      }
-      @media (max-width:600px) {
-        font-size: 10em;
+        right: 15px;
       }
     }
   }
 }
-// COOKIES
-.cookies{
-  width: 100%;
-  max-width: var(--grande);
-  padding: 5vh 0;
-  background-color: rgba(141, 141, 141, 0.5);
-  position: fixed;
-  bottom: 0;
-  @include flex(column, nowrap, center, center);
-  transform: translateY(100%);
-  transition: 1s;
-  @media (max-width:1600px) {
-   font-size: 75%;
-  }
-  @media (max-width: 1024px) {
-    font-size: 90%;
-  }
-  @media (max-width: 800px) {
-    font-size: 70%;
-  }
-  @media (max-width:600px) {
-    font-size: 90%;
-  }
-  &.aparecer{
-    transform: translateY(0%);
-  }
-  .h5_cookies{
-    margin-bottom: 10px;
-    font-size: 1.5em;
-  }
-  .p_cookies{
-    font-size: 0.9em;
-    &:not(:last-child){
-      margin-bottom: 10px;
-    }
-    @media (max-width: 1024px) {
-      width: 80%;
-      text-align: center;
-    }
-  }
-  .cerrar_cookies{
-    position: absolute;
-    right: 1em;
-    top: 5%;
-    font-size: 3em;
-    transform: rotate(45deg);
-    cursor: none;
-  }
-}
+// // COOKIES
+// .cookies{
+//   min-width: 100%;
+//   max-width: var(--grande);
+//   padding: 5vh 0;
+//   background-color: rgba(141, 141, 141, 0.5);
+//   position: fixed;
+//   bottom: 0;
+//   @include flex(column, nowrap, center, center);
+//   transform: translateY(100%);
+//   transition: 1s;
+//   @media (max-width:1600px) {
+//    font-size: 75%;
+//   }
+//   @media (max-width: 1024px) {
+//     font-size: 90%;
+//   }
+//   @media (max-width: 800px) {
+//     font-size: 70%;
+//   }
+//   @media (max-width:600px) {
+//     font-size: 90%;
+//   }
+//   &.aparecer{
+//     transform: translateY(0%);
+//   }
+//   .h5_cookies{
+//     margin-bottom: 10px;
+//     font-size: 1.5em;
+//   }
+//   .p_cookies{
+//     font-size: 0.9em;
+//     &:not(:last-child){
+//       margin-bottom: 10px;
+//     }
+//     @media (max-width: 1024px) {
+//       width: 80%;
+//       text-align: center;
+//     }
+//   }
+//   .cerrar_cookies{
+//     position: absolute;
+//     right: 1em;
+//     top: 5%;
+//     font-size: 3em;
+//     transform: rotate(45deg);
+//     cursor: none;
+//   }
+// }

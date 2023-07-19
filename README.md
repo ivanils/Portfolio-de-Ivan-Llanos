@@ -1,9 +1,6 @@
-## Descripción 🏝
 
--*En construcción*-
-
-Este proyecto es mi portfolio personal, el cual he realizado como proyecto final del máster en Desarrollo Web de la escuela Trazos.
-
+Hey! Here is my portfolio code. 
+You can check and gossip all you want 😁
 
 ## Autor ✒️
 **Iván Llanos**
@@ -11,16 +8,9 @@ Este proyecto es mi portfolio personal, el cual he realizado como proyecto final
 * [LinkedIn](https://www.linkedin.com/in/ivan-llanos-santamaria)
 * [Github](https://github.com/ivanils)
 
-## Ver ejemplo en vivo 
+## Live Demo
 - [https://ivanils.github.io/Portfolio-de-Ivan-Llanos/](https://ivanils.github.io/Portfolio-de-Ivan-Llanos/)
 
-## Instalación 
-Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
-  
-## Contratación
-Si quieres contratarme puedes escribirme a hola@ivanllanos.com para consultas
-
-
-## Licencia 📄
+## License 📄
 MIT Public License v3.0
-No puede usarse comercialmente.
+The content of the website as well as the code itself may not be used for commercial or lucrative purposes without prior express authorization.
